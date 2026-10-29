@@ -1,0 +1,71 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2811.61it/s]
+iter 0: val 0.9289
+iter 10: loss 0.4224 grad 6.25 skipped 0 [1.0 min]
+iter 20: loss 0.1159 grad 2.52 skipped 0 [2.1 min]
+iter 30: loss 0.0798 grad 1.50 skipped 0 [3.2 min]
+iter 40: loss 0.1014 grad 1.43 skipped 0 [4.3 min]
+iter 50: loss 0.0816 grad 3.24 skipped 0 [5.4 min]
+iter 50: val 0.0677
+iter 60: loss 0.0586 grad 0.82 skipped 0 [7.0 min]
+iter 70: loss 0.0692 grad 1.02 skipped 0 [8.0 min]
+iter 80: loss 0.0619 grad 2.11 skipped 0 [8.8 min]
+iter 90: loss 0.0530 grad 1.72 skipped 0 [9.7 min]
+iter 100: loss 0.0483 grad 0.40 skipped 0 [10.8 min]
+iter 100: val 0.0612
+iter 110: loss 0.0563 grad 0.36 skipped 0 [12.6 min]
+iter 120: loss 0.0574 grad 2.45 skipped 0 [13.7 min]
+iter 130: loss 0.0785 grad 2.16 skipped 0 [14.7 min]
+iter 140: loss 0.0514 grad 0.32 skipped 0 [15.8 min]
+iter 150: loss 0.0532 grad 1.90 skipped 0 [16.6 min]
+iter 150: val 0.0542
+iter 160: loss 0.0708 grad 2.95 skipped 0 [18.0 min]
+iter 170: loss 0.0575 grad 2.26 skipped 0 [19.0 min]
+iter 180: loss 0.0668 grad 1.00 skipped 0 [20.0 min]
+iter 190: loss 0.0532 grad 0.97 skipped 0 [20.9 min]
+iter 200: loss 0.0457 grad 1.09 skipped 0 [21.7 min]
+iter 200: val 0.0543
+iter 210: loss 0.0496 grad 1.20 skipped 0 [23.3 min]
+iter 220: loss 0.0639 grad 1.57 skipped 0 [24.4 min]
+iter 230: loss 0.0472 grad 1.43 skipped 0 [25.3 min]
+iter 240: loss 0.0567 grad 0.67 skipped 0 [26.3 min]
+iter 250: loss 0.0427 grad 0.50 skipped 0 [27.2 min]
+iter 250: val 0.0499
+iter 260: loss 0.0485 grad 0.92 skipped 0 [28.9 min]
+iter 270: loss 0.0372 grad 0.54 skipped 0 [30.0 min]
+iter 280: loss 0.0476 grad 0.74 skipped 0 [30.6 min]
+iter 290: loss 0.0464 grad 0.55 skipped 0 [31.4 min]
+iter 300: loss 0.0437 grad 0.89 skipped 0 [32.3 min]
+iter 300: val 0.0478
+iter 310: loss 0.0414 grad 0.86 skipped 0 [34.0 min]
+iter 320: loss 0.0460 grad 0.37 skipped 0 [35.2 min]
+iter 330: loss 0.0380 grad 1.54 skipped 0 [36.2 min]
+iter 340: loss 0.0422 grad 3.16 skipped 0 [37.3 min]
+iter 350: loss 0.0615 grad 1.44 skipped 0 [38.1 min]
+iter 350: val 0.0481
+iter 360: loss 0.0358 grad 0.31 skipped 0 [39.8 min]
+iter 370: loss 0.0476 grad 0.64 skipped 0 [40.9 min]
+iter 380: loss 0.0448 grad 0.75 skipped 0 [41.6 min]
+iter 390: loss 0.0442 grad 0.68 skipped 0 [42.5 min]
+iter 400: loss 0.0482 grad 1.14 skipped 0 [43.5 min]
+iter 400: val 0.0455
+iter 410: loss 0.0443 grad 0.38 skipped 0 [45.3 min]
+iter 420: loss 0.0345 grad 0.51 skipped 0 [46.4 min]
+iter 430: loss 0.0469 grad 0.51 skipped 0 [47.5 min]
+iter 440: loss 0.0343 grad 1.31 skipped 0 [48.6 min]
+iter 450: loss 0.0452 grad 0.55 skipped 0 [49.5 min]
+iter 450: val 0.0452
+iter 460: loss 0.0270 grad 0.52 skipped 0 [51.3 min]
+iter 470: loss 0.0550 grad 0.86 skipped 0 [52.3 min]
+iter 480: loss 0.0542 grad 2.76 skipped 0 [53.4 min]
+iter 490: loss 0.0375 grad 1.31 skipped 0 [54.4 min]
+iter 500: loss 0.0355 grad 1.32 skipped 0 [55.3 min]
+iter 500: val 0.0450
+iter 510: loss 0.0458 grad 2.60 skipped 0 [57.1 min]
+iter 520: loss 0.0312 grad 0.28 skipped 0 [58.4 min]
+iter 530: loss 0.0507 grad 0.85 skipped 0 [59.5 min]
+iter 540: loss 0.0297 grad 0.43 skipped 0 [60.7 min]
+iter 550: loss 0.0465 grad 1.53 skipped 0 [61.7 min]
+iter 550: val 0.0454
+iter 560: loss 0.0402 grad 1.65 skipped 0 [63.6 min]
+iter 560: val 0.0437
+done; skipped updates: 0

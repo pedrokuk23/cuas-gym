@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, code or data, please cite the article below."
+title: "CUAS-Gym: benchmark, code, data, and model outputs"
+version: "1.0.0"
+authors:
+  - family-names: "Kukulka de Albuquerque"
+    given-names: "Pedro"
+  - family-names: "Kuroswiski"
+    given-names: "André R."
+  - family-names: "Galembeck"
+    given-names: "Lucas"
+  - family-names: "Morais"
+    given-names: "Erasmo Cardoso de Faria"
+license:
+  - MIT
+  - CC-BY-4.0
+# repository-code: "https://github.com/<org>/<repository>"   # fill in before release v1.0.0
+# doi: "10.5281/zenodo.XXXXXXX"                              # fill in with the reserved Zenodo DOI
+preferred-citation:
+  type: article
+  title: "Learning to Plan Heterogeneous Counter-UAS Sensor Networks Over Terrain With Physics-Verified Rewards"
+  authors:
+    - family-names: "Kukulka de Albuquerque"
+      given-names: "Pedro"
+    - family-names: "Kuroswiski"
+      given-names: "André R."
+    - family-names: "Galembeck"
+      given-names: "Lucas"
+    - family-names: "Morais"
+      given-names: "Erasmo Cardoso de Faria"
+  year: 2026
+  notes: "Submitted to the IEEE Open Journal of the Computer Society."

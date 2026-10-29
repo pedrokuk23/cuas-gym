@@ -1,0 +1,18 @@
+=== [q3_8b] baseline (Qwen/Qwen3-8B, no thinking)
+test_id: n=60 valid=0.333 QR mean=0.185 tokens=214
+test_terrain: n=60 valid=0.333 QR mean=0.140 tokens=248
+test_sensor: n=60 valid=0.350 QR mean=0.165 tokens=287
+test_scale: n=40 valid=0.775 QR mean=0.300 tokens=381
+=== [q3_8b] SFT
+100%|██████████| 70/70 [06:35<00:00,  5.60s/it]                                               {'train_runtime': '395.8', 'train_samples_per_second': '1.415', 'train_steps_per_second': '0.177', 'train_loss': '0.7494', 'epoch': '2'}
+=== [q3_8b] checkpoint selection on the valid split
+test_id: n=20 valid=0.400 QR mean=0.231 tokens=1213
+test_id: n=20 valid=0.500 QR mean=0.218 tokens=880
+test_id: n=20 valid=0.100 QR mean=0.040 tokens=1125
+test_id: n=20 valid=0.100 QR mean=0.040 tokens=1125
+checkpoint-25 0.231
+checkpoint-50 0.218
+checkpoint-70 0.04
+final 0.04
+   chosen: checkpoint-25
+=== [q3_8b] GRPO, seeds: 0 1 2

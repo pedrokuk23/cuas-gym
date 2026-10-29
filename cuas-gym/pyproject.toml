@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuas-gym"
+version = "1.0.0"
+description = "Environment for training language models on multi-sensor placement over terrain with physics-verified rewards"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.22"]
+
+[project.optional-dependencies]
+api = ["requests"]
+validation = ["scipy", "matplotlib", "itmlogic"]
+
+[tool.setuptools]
+packages = ["cuas_gym", "cuas_gym.tests", "cuas_gym.physics", "cuas_gym.physics.tests"]
+
+[tool.setuptools.package-data]
+cuas_gym = ["datasheet_cache.json"]
+"cuas_gym.physics" = ["types.json"]
+"cuas_gym.physics.tests" = ["data/*.json"]

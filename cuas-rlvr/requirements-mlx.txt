@@ -1,0 +1,4 @@
+numpy>=1.22
+matplotlib
+pyyaml
+mlx-lm==0.32.2

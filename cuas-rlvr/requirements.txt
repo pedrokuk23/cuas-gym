@@ -1,0 +1,5 @@
+numpy>=1.22
+matplotlib            # figures
+requests              # API evaluation
+# cuas-gym: pip install -e ../cuas-gym
+scikit-learn>=1.3   # learned surrogate baseline only

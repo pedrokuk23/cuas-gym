@@ -1,0 +1,10 @@
+torch>=2.4
+transformers>=4.51
+trl>=0.19
+peft>=0.15
+datasets
+accelerate
+bitsandbytes ; platform_system == "Linux"
+vllm ; platform_system == "Linux"
+requests
+numpy

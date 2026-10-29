@@ -1,0 +1,52 @@
+{
+ "500": {
+  "sky": {
+   "greedy3": [
+    "Radar site3",
+    "Radar site5",
+    "Radar site2"
+   ],
+   "coverage": 0.7725340136054422
+  },
+  "itm": {
+   "greedy3": [
+    "Radar site3",
+    "Radar site5",
+    "Radar site2"
+   ],
+   "coverage": 0.7704081632653061
+  },
+  "single_itm": {
+   "Radar site1": 0.37755102040816324,
+   "Radar site2": 0.38010204081632654,
+   "Radar site3": 0.7555272108843537,
+   "Radar site4": 0.32908163265306123,
+   "Radar site5": 0.42772108843537415
+  }
+ },
+ "250": {
+  "sky": {
+   "greedy3": [
+    "Radar site3",
+    "Radar site5",
+    "Radar site1"
+   ],
+   "coverage": 0.5425170068027211
+  },
+  "itm": {
+   "greedy3": [
+    "Radar site3",
+    "Radar site5",
+    "Radar site1"
+   ],
+   "coverage": 0.5408163265306123
+  },
+  "single_itm": {
+   "Radar site1": 0.2372448979591837,
+   "Radar site2": 0.19005102040816327,
+   "Radar site3": 0.5259353741496599,
+   "Radar site4": 0.16666666666666666,
+   "Radar site5": 0.30017006802721086
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "test_sensor-000000": {
+  "rows": [
+   5,
+   21
+  ],
+  "action": [
+   [
+    2,
+    "eo"
+   ],
+   [
+    6,
+    "eo"
+   ]
+  ],
+  "F": 247.15790081689738,
+  "F_reference": 514.2240199637903,
+  "qr": 0.4806424655820265,
+  "proven": true,
+  "time_limit_s": 600.0,
+  "excluded_type": "ac",
+  "tolerance": 1e-09
+ },
+ "test_sensor-000041": {
+  "rows": [
+   56,
+   24,
+   8,
+   0,
+   45
+  ],
+  "action": [
+   [
+    15,
+    "radar"
+   ],
+   [
+    7,
+    "radar"
+   ],
+   [
+    3,
+    "radar"
+   ],
+   [
+    1,
+    "radar"
+   ],
+   [
+    12,
+    "eo"
+   ]
+  ],
+  "F": 1090.6863889953809,
+  "F_reference": 1832.2476822641845,
+  "qr": 0.5952723529427935,
+  "proven": true,
+  "time_limit_s": 600.0,
+  "excluded_type": "ac",
+  "tolerance": 1e-09
+ },
+ "test_sensor-000045": {
+  "rows": [
+   40,
+   13
+  ],
+  "action": [
+   [
+    11,
+    "radar"
+   ],
+   [
+    4,
+    "eo"
+   ]
+  ],
+  "F": 561.7336625382304,
+  "F_reference": 657.6344684263754,
+  "qr": 0.854173084756914,
+  "proven": true,
+  "time_limit_s": 600.0,
+  "excluded_type": "ac",
+  "tolerance": 1e-09
+ },
+ "test_sensor-000051": {
+  "rows": [
+   60,
+   37
+  ],
+  "action": [
+   [
+    16,
+    "radar"
+   ],
+   [
+    10,
+    "eo"
+   ]
+  ],
+  "F": 325.22823061691815,
+  "F_reference": 618.6795563160078,
+  "qr": 0.5256812307707784,
+  "proven": true,
+  "time_limit_s": 600.0,
+  "excluded_type": "ac",
+  "tolerance": 1e-09
+ },
+ "test_sensor-000058": {
+  "rows": [
+   37,
+   1
+  ],
+  "action": [
+   [
+    10,
+    "eo"
+   ],
+   [
+    1,
+    "eo"
+   ]
+  ],
+  "F": 789.4525184631348,
+  "F_reference": 982.8677477392588,
+  "qr": 0.8032133725814,
+  "proven": true,
+  "time_limit_s": 600.0,
+  "excluded_type": "ac",
+  "tolerance": 1e-09
+ }
+}

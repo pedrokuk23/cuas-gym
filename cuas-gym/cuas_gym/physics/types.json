@@ -1,0 +1,364 @@
+{
+ "note": "Sensor types and default parameters of the physics module.",
+ "types": {
+  "radar": {
+   "label": "Radar",
+   "passive": false,
+   "fields": {
+    "pt": 200,
+    "g": 38,
+    "f": 18,
+    "b": 1,
+    "nf": 5,
+    "l": 6,
+    "n": 10,
+    "pfa": 1e-09,
+    "model": 0,
+    "sw": 1,
+    "bwEl": 0,
+    "tilt": 5,
+    "gamma": -99,
+    "bwAz": 3,
+    "rres": 15,
+    "mti": 40,
+    "mp": 0,
+    "rho": 0.8,
+    "rough": 0.3,
+    "clsMargin": 6
+   },
+   "common": {
+    "rMax": 5000,
+    "pdMin": 0.8,
+    "elMin": -10,
+    "elMax": 60,
+    "cost": 5,
+    "opex": 1,
+    "revisit": 1,
+    "maxLooks": 5,
+    "maxTargets": 30,
+    "nuis": 20
+   },
+   "presets": []
+  },
+  "rid": {
+   "label": "Remote ID",
+   "passive": true,
+   "fields": {
+    "gr": 0,
+    "sens": -90,
+    "lm": 0,
+    "sig": 0,
+    "diff": 1,
+    "nlos": 20,
+    "fres": 0,
+    "mp": 0,
+    "rho": 0.8,
+    "rough": 0.3
+   },
+   "common": {
+    "rMax": 20000,
+    "pdMin": 0.5,
+    "elMin": -90,
+    "elMax": 90,
+    "cost": 1,
+    "opex": 0.2,
+    "needLOS": false,
+    "revisit": 1,
+    "maxLooks": 10,
+    "maxTargets": 100,
+    "nuis": 0
+   },
+   "presets": []
+  },
+  "eo": {
+   "label": "EO/IR",
+   "passive": true,
+   "fields": {
+    "band": 0,
+    "hfov": 2,
+    "npix": 1920,
+    "n50": 1,
+    "vis": 10,
+    "cmin": 0.02,
+    "scan": 0,
+    "fovDwell": 0.5,
+    "n50rec": 3,
+    "n50id": 6,
+    "cterr": 0.5,
+    "mrt": 0.1,
+    "brg": 0.2,
+    "cue": 0,
+    "det": 0,
+    "netd": 0.05,
+    "nec": 0.005,
+    "ee": 0.5,
+    "kth": 5
+   },
+   "common": {
+    "rMax": 5000,
+    "pdMin": 0.8,
+    "elMin": -20,
+    "elMax": 85,
+    "cost": 3,
+    "opex": 0.5,
+    "revisit": 0.5,
+    "maxLooks": 3,
+    "maxTargets": 1,
+    "nuis": 5
+   },
+   "presets": [
+    {
+     "name": "Day camera, long zoom (2° · 1920 px)",
+     "p": {
+      "band": 0,
+      "det": 1,
+      "hfov": 2,
+      "npix": 1920,
+      "nec": 0.005,
+      "ee": 0.5,
+      "kth": 5,
+      "cmin": 0.02
+     }
+    },
+    {
+     "name": "Uncooled thermal LWIR (6° · 640 px · NETD 50 mK)",
+     "p": {
+      "band": 1,
+      "det": 1,
+      "hfov": 6,
+      "npix": 640,
+      "netd": 0.05,
+      "mrt": 0.1,
+      "ee": 0.5,
+      "kth": 5
+     }
+    },
+    {
+     "name": "Cooled thermal MWIR (3° · 1280 px · NETD 20 mK)",
+     "p": {
+      "band": 1,
+      "det": 1,
+      "hfov": 3,
+      "npix": 1280,
+      "netd": 0.02,
+      "mrt": 0.04,
+      "ee": 0.5,
+      "kth": 5
+     }
+    },
+    {
+     "name": "Johnson cycles only (classic detection model)",
+     "p": {
+      "det": 0
+     }
+    }
+   ]
+  },
+  "rf": {
+   "label": "Passive RF",
+   "passive": true,
+   "fields": {
+    "gr": 10,
+    "sens": -100,
+    "lm": 10,
+    "sig": 6,
+    "diff": 1,
+    "nlos": 20,
+    "fres": 0,
+    "mp": 0,
+    "rho": 0.8,
+    "rough": 0.3,
+    "clsMargin": 5,
+    "idMargin": 10,
+    "brg": 3
+   },
+   "common": {
+    "rMax": 8000,
+    "pdMin": 0.8,
+    "elMin": -90,
+    "elMax": 90,
+    "cost": 3,
+    "opex": 0.5,
+    "needLOS": false,
+    "revisit": 1,
+    "maxLooks": 10,
+    "maxTargets": 8,
+    "nuis": 2
+   },
+   "presets": []
+  },
+  "ac": {
+   "label": "Acoustic",
+   "passive": true,
+   "fields": {
+    "nl": 45,
+    "ag": 20,
+    "alpha": 5,
+    "dt": 0,
+    "sig": 3,
+    "fa": 200,
+    "barrier": 1,
+    "nlos": 10,
+    "clsMargin": 6,
+    "brg": 5,
+    "gG": -1,
+    "c0met": 0
+   },
+   "common": {
+    "rMax": 1500,
+    "pdMin": 0.8,
+    "elMin": -90,
+    "elMax": 90,
+    "cost": 1,
+    "opex": 0.2,
+    "needLOS": false,
+    "revisit": 1,
+    "maxLooks": 10,
+    "maxTargets": 2,
+    "nuis": 10
+   },
+   "presets": [
+    {
+     "name": "Microphone array · rural (background 35 dB, grass G = 1)",
+     "p": {
+      "nl": 35,
+      "ag": 15,
+      "alpha": -1,
+      "dt": 8,
+      "sig": 3,
+      "gG": 1,
+      "c0met": 0
+     }
+    },
+    {
+     "name": "Microphone array · semi-urban (45 dB, G = 0.5)",
+     "p": {
+      "nl": 45,
+      "ag": 15,
+      "alpha": -1,
+      "dt": 8,
+      "sig": 3,
+      "gG": 0.5,
+      "c0met": 0
+     }
+    },
+    {
+     "name": "Microphone array · urban (55 dB, paved G = 0)",
+     "p": {
+      "nl": 55,
+      "ag": 15,
+      "alpha": -1,
+      "dt": 8,
+      "sig": 3,
+      "gG": 0,
+      "c0met": 0
+     }
+    },
+    {
+     "name": "Single microphone · rural (35 dB, G = 1)",
+     "p": {
+      "nl": 35,
+      "ag": 0,
+      "alpha": -1,
+      "dt": 8,
+      "sig": 3,
+      "gG": 1,
+      "c0met": 0
+     }
+    }
+   ]
+  }
+ },
+ "drones": [
+  {
+   "key": "mini",
+   "name": "Small quadcopter (< 250 g, Mini class)",
+   "rcs": 0.005,
+   "dc": 0.2,
+   "sl": 70,
+   "dT": 2,
+   "fluct": 3,
+   "ridPt": 20,
+   "c2Pt": 20
+  },
+  {
+   "key": "quad",
+   "name": "Medium quadcopter (~1 kg, Phantom / Mavic class)",
+   "rcs": 0.02,
+   "dc": 0.35,
+   "sl": 77,
+   "dT": 3,
+   "fluct": 3,
+   "ridPt": 20,
+   "c2Pt": 25
+  },
+  {
+   "key": "heavy",
+   "name": "Large multirotor (3–9 kg, Inspire / Matrice class)",
+   "rcs": 0.1,
+   "dc": 0.6,
+   "sl": 85,
+   "dT": 5,
+   "fluct": 3,
+   "ridPt": 20,
+   "c2Pt": 27
+  },
+  {
+   "key": "fpv",
+   "name": "FPV / racing quad (no Remote ID)",
+   "rcs": 0.01,
+   "dc": 0.25,
+   "sl": 80,
+   "dT": 3,
+   "fluct": 3,
+   "ridPt": null,
+   "c2Pt": 25
+  },
+  {
+   "key": "fiber",
+   "name": "Fiber-optic FPV (no radio at all)",
+   "rcs": 0.01,
+   "dc": 0.25,
+   "sl": 80,
+   "dT": 3,
+   "fluct": 3,
+   "ridPt": null,
+   "c2Pt": null
+  },
+  {
+   "key": "fw",
+   "name": "Small fixed-wing (foam, ~2 m span)",
+   "rcs": 0.02,
+   "dc": 0.8,
+   "sl": 72,
+   "dT": 3,
+   "fluct": 1,
+   "ridPt": 20,
+   "c2Pt": 25
+  },
+  {
+   "key": "owa",
+   "name": "Large fixed-wing, combustion engine (no Remote ID)",
+   "rcs": 0.5,
+   "dc": 1.5,
+   "sl": 95,
+   "dT": 15,
+   "fluct": 1,
+   "ridPt": null,
+   "c2Pt": 30
+  }
+ ],
+ "base": {
+  "mast": 10,
+  "az": 0,
+  "sector": 360,
+  "elMin": -90,
+  "elMax": 90,
+  "rMin": 0,
+  "rMax": 5000,
+  "pdMin": 0.8,
+  "cost": 1,
+  "needLOS": true,
+  "deployed": true
+ }
+}

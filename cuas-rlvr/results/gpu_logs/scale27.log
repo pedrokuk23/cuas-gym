@@ -1,0 +1,163 @@
+=== q38_27b s0 Fri Oct 23 04:23:00 PM -03 2026
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:54,  4.88it/s]Loading weights:   0%|          | 2/851 [00:00<02:56,  4.80it/s]Loading weights:   3%|▎         | 23/851 [00:00<00:12, 63.73it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.44it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.16it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 141.77it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.58it/s]Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 196.86it/s]Loading weights:  18%|█▊        | 154/851 [00:01<00:03, 174.84it/s]Loading weights:  22%|██▏       | 183/851 [00:01<00:03, 204.75it/s]Loading weights:  24%|██▍       | 205/851 [00:01<00:03, 191.31it/s]Loading weights:  27%|██▋       | 226/851 [00:01<00:03, 196.14it/s]Loading weights:  30%|██▉       | 252/851 [00:01<00:02, 212.77it/s]Loading weights:  32%|███▏      | 275/851 [00:01<00:02, 207.12it/s]Loading weights:  35%|███▍      | 297/851 [00:01<00:02, 198.99it/s]Loading weights:  37%|███▋      | 318/851 [00:01<00:02, 191.86it/s]Loading weights:  41%|████      | 345/851 [00:02<00:02, 204.97it/s]Loading weights:  43%|████▎     | 366/851 [00:02<00:02, 185.36it/s]Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 211.69it/s]Loading weights:  49%|████▉     | 417/851 [00:02<00:02, 195.52it/s]Loading weights:  51%|█████▏    | 438/851 [00:02<00:02, 198.99it/s]Loading weights:  55%|█████▍    | 464/851 [00:02<00:01, 214.49it/s]Loading weights:  57%|█████▋    | 486/851 [00:02<00:01, 204.61it/s]Loading weights:  60%|█████▉    | 507/851 [00:02<00:01, 195.54it/s]Loading weights:  62%|██████▏   | 527/851 [00:03<00:01, 190.67it/s]Loading weights:  65%|██████▌   | 556/851 [00:03<00:01, 214.77it/s]Loading weights:  68%|██████▊   | 578/851 [00:03<00:01, 187.39it/s]Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 216.13it/s]Loading weights:  74%|███████▍  | 632/851 [00:03<00:01, 191.09it/s]Loading weights:  78%|███████▊  | 662/851 [00:03<00:00, 216.85it/s]Loading weights:  80%|████████  | 685/851 [00:03<00:00, 191.57it/s]Loading weights:  84%|████████▍ | 715/851 [00:03<00:00, 216.28it/s]Loading weights:  87%|████████▋ | 739/851 [00:04<00:00, 196.86it/s]Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 217.27it/s]Loading weights:  93%|█████████▎| 791/851 [00:04<00:00, 194.76it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 214.85it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 198.81it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 184.68it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 34 s, 16.9 s per answer, mean QR so far 1.000
+[4/40] 88 s, 27.0 s per answer, mean QR so far 0.987
+[6/40] 144 s, 28.0 s per answer, mean QR so far 0.991
+[8/40] 173 s, 14.6 s per answer, mean QR so far 0.993
+[10/40] 229 s, 28.0 s per answer, mean QR so far 0.968
+[12/40] 261 s, 16.1 s per answer, mean QR so far 0.969
+[14/40] 295 s, 17.1 s per answer, mean QR so far 0.968
+[16/40] 332 s, 18.3 s per answer, mean QR so far 0.961
+[18/40] 366 s, 17.1 s per answer, mean QR so far 0.965
+[20/40] 392 s, 13.1 s per answer, mean QR so far 0.958
+[22/40] 424 s, 15.6 s per answer, mean QR so far 0.953
+[24/40] 474 s, 25.0 s per answer, mean QR so far 0.957
+[26/40] 527 s, 26.7 s per answer, mean QR so far 0.960
+[28/40] 558 s, 15.5 s per answer, mean QR so far 0.960
+[30/40] 598 s, 19.8 s per answer, mean QR so far 0.960
+[32/40] 648 s, 25.2 s per answer, mean QR so far 0.931
+[34/40] 695 s, 23.5 s per answer, mean QR so far 0.934
+[36/40] 733 s, 19.1 s per answer, mean QR so far 0.937
+[38/40] 782 s, 24.4 s per answer, mean QR so far 0.935
+[40/40] 807 s, 12.4 s per answer, mean QR so far 0.935
+test_scale: n=40 valid=0.975 QR mean=0.935 tokens=777
+=== q38_27b s1 Fri Oct 23 04:36:37 PM -03 2026
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:54,  4.88it/s]Loading weights:   0%|          | 2/851 [00:00<02:54,  4.85it/s]Loading weights:   3%|▎         | 24/851 [00:00<00:12, 66.14it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.63it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.54it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 142.10it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.80it/s]Loading weights:  15%|█▌        | 130/851 [00:01<00:03, 191.76it/s]Loading weights:  18%|█▊        | 151/851 [00:01<00:03, 187.00it/s]Loading weights:  20%|██        | 173/851 [00:01<00:03, 188.54it/s]Loading weights:  23%|██▎       | 199/851 [00:01<00:03, 206.80it/s]Loading weights:  26%|██▌       | 221/851 [00:01<00:03, 199.27it/s]Loading weights:  28%|██▊       | 242/851 [00:01<00:03, 190.40it/s]Loading weights:  31%|███       | 262/851 [00:01<00:03, 189.61it/s]Loading weights:  34%|███▍      | 289/851 [00:01<00:02, 211.07it/s]Loading weights:  37%|███▋      | 311/851 [00:01<00:02, 194.78it/s]Loading weights:  39%|███▉      | 332/851 [00:02<00:02, 198.64it/s]Loading weights:  42%|████▏     | 358/851 [00:02<00:02, 214.47it/s]Loading weights:  45%|████▍     | 380/851 [00:02<00:02, 204.11it/s]Loading weights:  47%|████▋     | 401/851 [00:02<00:02, 193.18it/s]Loading weights:  49%|████▉     | 421/851 [00:02<00:02, 188.40it/s]Loading weights:  53%|█████▎    | 450/851 [00:02<00:01, 212.96it/s]Loading weights:  55%|█████▌    | 472/851 [00:02<00:02, 185.23it/s]Loading weights:  59%|█████▉    | 503/851 [00:02<00:01, 214.51it/s]Loading weights:  62%|██████▏   | 526/851 [00:03<00:01, 190.57it/s]Loading weights:  65%|██████▌   | 554/851 [00:03<00:01, 212.46it/s]Loading weights:  68%|██████▊   | 577/851 [00:03<00:01, 193.57it/s]Loading weights:  71%|███████   | 606/851 [00:03<00:01, 213.13it/s]Loading weights:  74%|███████▍  | 629/851 [00:03<00:01, 197.36it/s]Loading weights:  76%|███████▋  | 651/851 [00:03<00:01, 197.91it/s]Loading weights:  80%|███████▉  | 677/851 [00:03<00:00, 213.47it/s]Loading weights:  82%|████████▏ | 699/851 [00:03<00:00, 209.54it/s]Loading weights:  85%|████████▍ | 721/851 [00:03<00:00, 204.62it/s]Loading weights:  87%|████████▋ | 742/851 [00:04<00:00, 198.95it/s]Loading weights:  90%|█████████ | 769/851 [00:04<00:00, 210.09it/s]Loading weights:  93%|█████████▎| 791/851 [00:04<00:00, 193.79it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 216.95it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.41it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 184.65it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 31 s, 15.5 s per answer, mean QR so far 1.000
+[4/40] 79 s, 24.1 s per answer, mean QR so far 0.972
+[6/40] 136 s, 28.3 s per answer, mean QR so far 0.981
+[8/40] 162 s, 13.2 s per answer, mean QR so far 0.986
+[10/40] 216 s, 26.9 s per answer, mean QR so far 0.967
+[12/40] 247 s, 15.6 s per answer, mean QR so far 0.968
+[14/40] 292 s, 22.3 s per answer, mean QR so far 0.970
+[16/40] 351 s, 29.7 s per answer, mean QR so far 0.962
+[18/40] 402 s, 25.0 s per answer, mean QR so far 0.967
+[20/40] 424 s, 11.2 s per answer, mean QR so far 0.969
+[22/40] 449 s, 12.6 s per answer, mean QR so far 0.969
+[24/40] 499 s, 24.9 s per answer, mean QR so far 0.970
+[26/40] 547 s, 23.9 s per answer, mean QR so far 0.972
+[28/40] 574 s, 13.9 s per answer, mean QR so far 0.971
+[30/40] 627 s, 26.5 s per answer, mean QR so far 0.965
+[32/40] 675 s, 23.8 s per answer, mean QR so far 0.966
+[34/40] 721 s, 22.9 s per answer, mean QR so far 0.967
+[36/40] 757 s, 18.1 s per answer, mean QR so far 0.969
+[38/40] 808 s, 25.5 s per answer, mean QR so far 0.965
+[40/40] 830 s, 11.0 s per answer, mean QR so far 0.964
+test_scale: n=40 valid=1.000 QR mean=0.964 tokens=746
+=== q38_27b s2 Fri Oct 23 04:50:36 PM -03 2026
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:53,  4.89it/s]Loading weights:   0%|          | 2/851 [00:00<02:54,  4.86it/s]Loading weights:   3%|▎         | 24/851 [00:00<00:12, 66.23it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.46it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.35it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 141.98it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.66it/s]Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 196.86it/s]Loading weights:  18%|█▊        | 153/851 [00:01<00:03, 179.21it/s]Loading weights:  20%|██        | 174/851 [00:01<00:03, 187.31it/s]Loading weights:  24%|██▎       | 200/851 [00:01<00:03, 205.94it/s]Loading weights:  26%|██▌       | 222/851 [00:01<00:03, 204.32it/s]Loading weights:  29%|██▊       | 243/851 [00:01<00:03, 196.52it/s]Loading weights:  31%|███       | 264/851 [00:01<00:03, 193.50it/s]Loading weights:  34%|███▍      | 291/851 [00:01<00:02, 214.26it/s]Loading weights:  37%|███▋      | 313/851 [00:01<00:02, 185.12it/s]Loading weights:  40%|████      | 344/851 [00:02<00:02, 214.55it/s]Loading weights:  43%|████▎     | 367/851 [00:02<00:02, 189.46it/s]Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 211.68it/s]Loading weights:  49%|████▉     | 418/851 [00:02<00:02, 191.76it/s]Loading weights:  52%|█████▏    | 439/851 [00:02<00:02, 196.25it/s]Loading weights:  55%|█████▍    | 465/851 [00:02<00:01, 211.31it/s]Loading weights:  57%|█████▋    | 487/851 [00:02<00:01, 208.20it/s]Loading weights:  60%|█████▉    | 509/851 [00:02<00:01, 203.16it/s]Loading weights:  62%|██████▏   | 530/851 [00:03<00:01, 195.23it/s]Loading weights:  65%|██████▌   | 557/851 [00:03<00:01, 207.80it/s]Loading weights:  68%|██████▊   | 578/851 [00:03<00:01, 187.93it/s]Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 216.96it/s]Loading weights:  74%|███████▍  | 632/851 [00:03<00:01, 191.62it/s]Loading weights:  78%|███████▊  | 662/851 [00:03<00:00, 217.54it/s]Loading weights:  80%|████████  | 685/851 [00:03<00:00, 192.10it/s]Loading weights:  84%|████████▍ | 715/851 [00:03<00:00, 216.79it/s]Loading weights:  87%|████████▋ | 738/851 [00:04<00:00, 194.84it/s]Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 218.25it/s]Loading weights:  93%|█████████▎| 792/851 [00:04<00:00, 197.65it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 216.00it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.61it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 185.10it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 30 s, 15.2 s per answer, mean QR so far 1.000
+[4/40] 66 s, 17.7 s per answer, mean QR so far 0.972
+[6/40] 110 s, 22.1 s per answer, mean QR so far 0.981
+[8/40] 135 s, 12.7 s per answer, mean QR so far 0.986
+[10/40] 174 s, 19.1 s per answer, mean QR so far 0.970
+[12/40] 202 s, 14.0 s per answer, mean QR so far 0.964
+[14/40] 230 s, 14.4 s per answer, mean QR so far 0.966
+[16/40] 264 s, 16.8 s per answer, mean QR so far 0.959
+[18/40] 302 s, 19.0 s per answer, mean QR so far 0.964
+[20/40] 326 s, 11.9 s per answer, mean QR so far 0.963
+[22/40] 350 s, 12.1 s per answer, mean QR so far 0.963
+[24/40] 379 s, 14.3 s per answer, mean QR so far 0.965
+[26/40] 408 s, 14.9 s per answer, mean QR so far 0.967
+[28/40] 432 s, 11.9 s per answer, mean QR so far 0.964
+[30/40] 470 s, 19.1 s per answer, mean QR so far 0.955
+[32/40] 504 s, 16.8 s per answer, mean QR so far 0.951
+[34/40] 537 s, 16.8 s per answer, mean QR so far 0.953
+[36/40] 566 s, 14.1 s per answer, mean QR so far 0.955
+[38/40] 595 s, 14.8 s per answer, mean QR so far 0.953
+[40/40] 622 s, 13.4 s per answer, mean QR so far 0.950
+test_scale: n=40 valid=1.000 QR mean=0.950 tokens=615
+=== q38_27banon s0 Fri Oct 23 05:01:08 PM -03 2026
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:54,  4.86it/s]Loading weights:   0%|          | 2/851 [00:00<02:55,  4.84it/s]Loading weights:   3%|▎         | 23/851 [00:00<00:12, 64.04it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.66it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.25it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 141.79it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.51it/s]Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 196.65it/s]Loading weights:  18%|█▊        | 154/851 [00:01<00:03, 174.65it/s]Loading weights:  22%|██▏       | 183/851 [00:01<00:03, 204.52it/s]Loading weights:  24%|██▍       | 205/851 [00:01<00:03, 191.01it/s]Loading weights:  27%|██▋       | 227/851 [00:01<00:03, 190.95it/s]Loading weights:  30%|██▉       | 253/851 [00:01<00:02, 209.16it/s]Loading weights:  32%|███▏      | 275/851 [00:01<00:02, 209.05it/s]Loading weights:  35%|███▍      | 297/851 [00:01<00:02, 200.15it/s]Loading weights:  37%|███▋      | 318/851 [00:01<00:02, 192.51it/s]Loading weights:  41%|████      | 345/851 [00:02<00:02, 205.38it/s]Loading weights:  43%|████▎     | 366/851 [00:02<00:02, 185.53it/s]Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 212.04it/s]Loading weights:  49%|████▉     | 417/851 [00:02<00:02, 196.13it/s]Loading weights:  51%|█████▏    | 438/851 [00:02<00:02, 199.46it/s]Loading weights:  55%|█████▍    | 464/851 [00:02<00:01, 214.76it/s]Loading weights:  57%|█████▋    | 486/851 [00:02<00:01, 204.84it/s]Loading weights:  60%|█████▉    | 507/851 [00:02<00:01, 195.63it/s]Loading weights:  62%|██████▏   | 527/851 [00:03<00:01, 190.53it/s]Loading weights:  65%|██████▌   | 556/851 [00:03<00:01, 214.58it/s]Loading weights:  68%|██████▊   | 578/851 [00:03<00:01, 187.25it/s]Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 215.88it/s]Loading weights:  74%|███████▍  | 632/851 [00:03<00:01, 190.77it/s]Loading weights:  78%|███████▊  | 662/851 [00:03<00:00, 216.45it/s]Loading weights:  80%|████████  | 685/851 [00:03<00:00, 190.76it/s]Loading weights:  84%|████████▍ | 715/851 [00:03<00:00, 215.50it/s]Loading weights:  87%|████████▋ | 738/851 [00:04<00:00, 193.89it/s]Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 217.28it/s]Loading weights:  93%|█████████▎| 792/851 [00:04<00:00, 197.05it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 215.51it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.21it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 184.61it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 36 s, 18.2 s per answer, mean QR so far 1.000
+[4/40] 81 s, 22.4 s per answer, mean QR so far 0.984
+[6/40] 122 s, 20.5 s per answer, mean QR so far 0.989
+[8/40] 163 s, 20.3 s per answer, mean QR so far 0.992
+[10/40] 230 s, 33.3 s per answer, mean QR so far 0.966
+[12/40] 278 s, 24.3 s per answer, mean QR so far 0.966
+[14/40] 327 s, 24.4 s per answer, mean QR so far 0.969
+[16/40] 371 s, 22.2 s per answer, mean QR so far 0.958
+[18/40] 443 s, 36.2 s per answer, mean QR so far 0.963
+[20/40] 472 s, 14.5 s per answer, mean QR so far 0.966
+[22/40] 503 s, 15.5 s per answer, mean QR so far 0.962
+[24/40] 540 s, 18.4 s per answer, mean QR so far 0.963
+[26/40] 578 s, 18.8 s per answer, mean QR so far 0.965
+[28/40] 618 s, 19.9 s per answer, mean QR so far 0.964
+[30/40] 705 s, 43.4 s per answer, mean QR so far 0.927
+[32/40] 749 s, 22.0 s per answer, mean QR so far 0.931
+[34/40] 805 s, 28.3 s per answer, mean QR so far 0.934
+[36/40] 858 s, 26.5 s per answer, mean QR so far 0.938
+[38/40] 897 s, 19.5 s per answer, mean QR so far 0.936
+[40/40] 927 s, 15.0 s per answer, mean QR so far 0.938
+test_scale: n=40 valid=0.975 QR mean=0.938 tokens=863
+=== q38_27banon s1 Fri Oct 23 05:16:45 PM -03 2026
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:54,  4.88it/s]Loading weights:   0%|          | 2/851 [00:00<02:54,  4.86it/s]Loading weights:   3%|▎         | 23/851 [00:00<00:12, 64.28it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.98it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.75it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 142.23it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.93it/s]Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 197.19it/s]Loading weights:  18%|█▊        | 154/851 [00:01<00:03, 174.56it/s]Loading weights:  22%|██▏       | 183/851 [00:01<00:03, 204.53it/s]Loading weights:  24%|██▍       | 205/851 [00:01<00:03, 191.03it/s]Loading weights:  27%|██▋       | 226/851 [00:01<00:03, 195.87it/s]Loading weights:  30%|██▉       | 252/851 [00:01<00:02, 212.55it/s]Loading weights:  32%|███▏      | 275/851 [00:01<00:02, 206.80it/s]Loading weights:  35%|███▍      | 297/851 [00:01<00:02, 198.84it/s]Loading weights:  37%|███▋      | 318/851 [00:01<00:02, 191.75it/s]Loading weights:  41%|████      | 345/851 [00:02<00:02, 204.90it/s]Loading weights:  43%|████▎     | 366/851 [00:02<00:02, 185.32it/s]Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 211.90it/s]Loading weights:  49%|████▉     | 417/851 [00:02<00:02, 196.11it/s]Loading weights:  51%|█████▏    | 438/851 [00:02<00:02, 199.45it/s]Loading weights:  55%|█████▍    | 464/851 [00:02<00:01, 214.89it/s]Loading weights:  57%|█████▋    | 486/851 [00:02<00:01, 204.98it/s]Loading weights:  60%|█████▉    | 507/851 [00:02<00:01, 195.71it/s]Loading weights:  62%|██████▏   | 527/851 [00:03<00:01, 190.57it/s]Loading weights:  65%|██████▌   | 554/851 [00:03<00:01, 211.99it/s]Loading weights:  68%|██████▊   | 576/851 [00:03<00:01, 196.77it/s]Loading weights:  70%|███████   | 598/851 [00:03<00:01, 195.80it/s]Loading weights:  73%|███████▎  | 624/851 [00:03<00:01, 211.23it/s]Loading weights:  76%|███████▌  | 646/851 [00:03<00:00, 210.82it/s]Loading weights:  78%|███████▊  | 668/851 [00:03<00:00, 203.90it/s]Loading weights:  81%|████████  | 689/851 [00:03<00:00, 195.01it/s]Loading weights:  84%|████████▍ | 716/851 [00:03<00:00, 209.17it/s]Loading weights:  87%|████████▋ | 738/851 [00:04<00:00, 192.80it/s]Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 218.18it/s]Loading weights:  93%|█████████▎| 791/851 [00:04<00:00, 194.03it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 216.45it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.39it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 184.81it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 29 s, 14.4 s per answer, mean QR so far 1.000
+[4/40] 82 s, 26.7 s per answer, mean QR so far 0.977
+[6/40] 138 s, 27.8 s per answer, mean QR so far 0.985
+[8/40] 162 s, 12.1 s per answer, mean QR so far 0.988
+[10/40] 216 s, 26.9 s per answer, mean QR so far 0.960
+[12/40] 247 s, 15.7 s per answer, mean QR so far 0.966
+[14/40] 280 s, 16.4 s per answer, mean QR so far 0.968
+[16/40] 336 s, 27.7 s per answer, mean QR so far 0.957
+[18/40] 381 s, 22.8 s per answer, mean QR so far 0.962
+[20/40] 405 s, 12.0 s per answer, mean QR so far 0.965
+[22/40] 432 s, 13.3 s per answer, mean QR so far 0.965
+[24/40] 480 s, 24.2 s per answer, mean QR so far 0.966
+[26/40] 533 s, 26.2 s per answer, mean QR so far 0.969
+[28/40] 561 s, 14.1 s per answer, mean QR so far 0.966
+[30/40] 618 s, 28.5 s per answer, mean QR so far 0.966
+[32/40] 667 s, 24.4 s per answer, mean QR so far 0.967
+[34/40] 717 s, 25.5 s per answer, mean QR so far 0.968
+[36/40] 755 s, 18.8 s per answer, mean QR so far 0.969
+[38/40] 808 s, 26.6 s per answer, mean QR so far 0.967
+[40/40] 830 s, 11.0 s per answer, mean QR so far 0.966
+test_scale: n=40 valid=1.000 QR mean=0.966 tokens=723
+=== q38_27banon s2 Fri Oct 23 05:30:45 PM -03 2026
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:54,  4.88it/s]Loading weights:   0%|          | 2/851 [00:00<02:54,  4.85it/s]Loading weights:   3%|▎         | 23/851 [00:00<00:13, 63.57it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.26it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.03it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 141.78it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.58it/s]Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 196.83it/s]Loading weights:  18%|█▊        | 154/851 [00:01<00:03, 174.86it/s]Loading weights:  22%|██▏       | 183/851 [00:01<00:03, 204.79it/s]Loading weights:  24%|██▍       | 205/851 [00:01<00:03, 191.30it/s]Loading weights:  27%|██▋       | 227/851 [00:01<00:03, 191.20it/s]Loading weights:  30%|██▉       | 254/851 [00:01<00:02, 204.75it/s]Loading weights:  33%|███▎      | 278/851 [00:01<00:02, 207.72it/s]Loading weights:  35%|███▌      | 300/851 [00:01<00:02, 211.02it/s]Loading weights:  38%|███▊      | 322/851 [00:02<00:02, 196.46it/s]Loading weights:  41%|████      | 345/851 [00:02<00:02, 204.15it/s]Loading weights:  43%|████▎     | 366/851 [00:02<00:02, 184.48it/s]Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 211.58it/s]Loading weights:  49%|████▉     | 417/851 [00:02<00:02, 195.56it/s]Loading weights:  51%|█████▏    | 438/851 [00:02<00:02, 198.80it/s]Loading weights:  55%|█████▍    | 464/851 [00:02<00:01, 214.57it/s]Loading weights:  57%|█████▋    | 486/851 [00:02<00:01, 204.74it/s]Loading weights:  60%|█████▉    | 507/851 [00:02<00:01, 195.59it/s]Loading weights:  62%|██████▏   | 527/851 [00:03<00:01, 190.59it/s]Loading weights:  65%|██████▌   | 556/851 [00:03<00:01, 214.81it/s]Loading weights:  68%|██████▊   | 578/851 [00:03<00:01, 187.31it/s]Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 216.04it/s]Loading weights:  74%|███████▍  | 632/851 [00:03<00:01, 191.22it/s]Loading weights:  78%|███████▊  | 662/851 [00:03<00:00, 216.91it/s]Loading weights:  80%|████████  | 685/851 [00:03<00:00, 191.76it/s]Loading weights:  84%|████████▍ | 715/851 [00:03<00:00, 216.49it/s]Loading weights:  87%|████████▋ | 739/851 [00:04<00:00, 196.94it/s]Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 217.38it/s]Loading weights:  93%|█████████▎| 791/851 [00:04<00:00, 194.69it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 216.22it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.14it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 184.84it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 33 s, 16.4 s per answer, mean QR so far 1.000
+[4/40] 68 s, 17.5 s per answer, mean QR so far 0.986
+[6/40] 114 s, 22.9 s per answer, mean QR so far 0.824
+[8/40] 141 s, 13.7 s per answer, mean QR so far 0.868
+[10/40] 195 s, 27.1 s per answer, mean QR so far 0.871
+[12/40] 227 s, 16.0 s per answer, mean QR so far 0.889
+[14/40] 274 s, 23.1 s per answer, mean QR so far 0.902
+[16/40] 315 s, 20.5 s per answer, mean QR so far 0.898
+[18/40] 357 s, 21.1 s per answer, mean QR so far 0.909
+[20/40] 383 s, 13.0 s per answer, mean QR so far 0.918
+[22/40] 409 s, 13.1 s per answer, mean QR so far 0.917
+[24/40] 442 s, 16.7 s per answer, mean QR so far 0.923
+[26/40] 470 s, 13.9 s per answer, mean QR so far 0.927
+[28/40] 500 s, 14.9 s per answer, mean QR so far 0.930
+[30/40] 560 s, 29.8 s per answer, mean QR so far 0.934
+[32/40] 608 s, 24.4 s per answer, mean QR so far 0.929
+[34/40] 661 s, 26.2 s per answer, mean QR so far 0.932
+[36/40] 699 s, 19.0 s per answer, mean QR so far 0.935
+[38/40] 751 s, 26.3 s per answer, mean QR so far 0.935
+[40/40] 774 s, 11.4 s per answer, mean QR so far 0.935
+test_scale: n=40 valid=0.975 QR mean=0.935 tokens=692
+=== done Fri Oct 23 05:43:49 PM -03 2026

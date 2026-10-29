@@ -1,0 +1,138 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2548.01it/s]
+29 instances with both eo and rf usable
+[4/29] 35 s
+[8/29] 65 s
+[12/29] 87 s
+[16/29] 109 s
+[20/29] 139 s
+[24/29] 166 s
+[28/29] 192 s
+[29/29] 212 s
+orig: QR 0.879 valid 0.97 share of eo among eo+rf: 0.00
+swap: QR 0.917 valid 1.00 share of eo among eo+rf: 0.00
+instances where eo has the longer range originally: 1/29
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2325.58it/s]
+29 instances with both eo and rf usable
+[4/29] 33 s
+[8/29] 62 s
+[12/29] 83 s
+[16/29] 104 s
+[20/29] 133 s
+[24/29] 163 s
+[28/29] 189 s
+[29/29] 208 s
+orig: QR 0.711 valid 0.76 share of eo among eo+rf: 0.00
+swap: QR 0.711 valid 0.76 share of eo among eo+rf: 0.00
+instances where eo has the longer range originally: 1/29
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2325.00it/s]
+[8/480] 21 s, 2.6 s per answer, mean QR so far 0.339
+[16/480] 51 s, 3.8 s per answer, mean QR so far 0.670
+[24/480] 79 s, 3.4 s per answer, mean QR so far 0.714
+[32/480] 99 s, 2.5 s per answer, mean QR so far 0.711
+[40/480] 116 s, 2.1 s per answer, mean QR so far 0.726
+[48/480] 141 s, 3.1 s per answer, mean QR so far 0.745
+[56/480] 160 s, 2.4 s per answer, mean QR so far 0.777
+[64/480] 198 s, 4.7 s per answer, mean QR so far 0.805
+[72/480] 228 s, 3.7 s per answer, mean QR so far 0.821
+[80/480] 244 s, 2.1 s per answer, mean QR so far 0.832
+[88/480] 276 s, 4.0 s per answer, mean QR so far 0.847
+[96/480] 297 s, 2.6 s per answer, mean QR so far 0.848
+[104/480] 323 s, 3.3 s per answer, mean QR so far 0.855
+[112/480] 339 s, 2.0 s per answer, mean QR so far 0.814
+[120/480] 377 s, 4.7 s per answer, mean QR so far 0.826
+[128/480] 400 s, 2.9 s per answer, mean QR so far 0.818
+[136/480] 425 s, 3.2 s per answer, mean QR so far 0.828
+[144/480] 459 s, 4.2 s per answer, mean QR so far 0.835
+[152/480] 485 s, 3.2 s per answer, mean QR so far 0.844
+[160/480] 501 s, 2.1 s per answer, mean QR so far 0.851
+[168/480] 523 s, 2.8 s per answer, mean QR so far 0.852
+[176/480] 541 s, 2.2 s per answer, mean QR so far 0.853
+[184/480] 576 s, 4.4 s per answer, mean QR so far 0.855
+[192/480] 596 s, 2.5 s per answer, mean QR so far 0.861
+[200/480] 614 s, 2.2 s per answer, mean QR so far 0.863
+[208/480] 634 s, 2.5 s per answer, mean QR so far 0.868
+[216/480] 660 s, 3.2 s per answer, mean QR so far 0.853
+[224/480] 682 s, 2.7 s per answer, mean QR so far 0.846
+[232/480] 718 s, 4.6 s per answer, mean QR so far 0.850
+[240/480] 738 s, 2.5 s per answer, mean QR so far 0.855
+[248/480] 758 s, 2.5 s per answer, mean QR so far 0.860
+[256/480] 777 s, 2.3 s per answer, mean QR so far 0.864
+[264/480] 797 s, 2.5 s per answer, mean QR so far 0.855
+[272/480] 813 s, 2.1 s per answer, mean QR so far 0.854
+[280/480] 834 s, 2.6 s per answer, mean QR so far 0.858
+[288/480] 855 s, 2.6 s per answer, mean QR so far 0.862
+[296/480] 891 s, 4.4 s per answer, mean QR so far 0.866
+[304/480] 923 s, 4.1 s per answer, mean QR so far 0.862
+[312/480] 956 s, 4.2 s per answer, mean QR so far 0.862
+[320/480] 988 s, 4.0 s per answer, mean QR so far 0.862
+[328/480] 1016 s, 3.5 s per answer, mean QR so far 0.865
+[336/480] 1046 s, 3.7 s per answer, mean QR so far 0.855
+[344/480] 1068 s, 2.8 s per answer, mean QR so far 0.857
+[352/480] 1095 s, 3.3 s per answer, mean QR so far 0.860
+[360/480] 1113 s, 2.3 s per answer, mean QR so far 0.849
+[368/480] 1133 s, 2.4 s per answer, mean QR so far 0.844
+[376/480] 1150 s, 2.2 s per answer, mean QR so far 0.847
+[384/480] 1166 s, 1.9 s per answer, mean QR so far 0.845
+[392/480] 1189 s, 2.9 s per answer, mean QR so far 0.845
+[400/480] 1220 s, 3.9 s per answer, mean QR so far 0.844
+[408/480] 1242 s, 2.7 s per answer, mean QR so far 0.841
+[416/480] 1262 s, 2.6 s per answer, mean QR so far 0.828
+[424/480] 1301 s, 4.9 s per answer, mean QR so far 0.830
+[432/480] 1330 s, 3.6 s per answer, mean QR so far 0.830
+[440/480] 1352 s, 2.7 s per answer, mean QR so far 0.831
+[448/480] 1375 s, 2.9 s per answer, mean QR so far 0.834
+[456/480] 1399 s, 3.1 s per answer, mean QR so far 0.836
+[464/480] 1431 s, 3.9 s per answer, mean QR so far 0.837
+[472/480] 1447 s, 2.0 s per answer, mean QR so far 0.837
+[480/480] 1480 s, 4.1 s per answer, mean QR so far 0.837
+test_sensor: n=480 valid=0.992 QR mean=0.837 tokens=392
+probe_explore_v2_q7b_grpo_s0.jsonl
+  n=480 valid=0.99 QR=0.837  type shares: rf 0.83, eo 0.16, ac 0.00, rid 0.00
+  answers with 'ac': 3/476 valid answers
+  instances where ceiling without 'ac' < 0.9: n=40, model QR 0.468 (ceiling 0.652); other instances: n=440, model QR 0.870
+mlx_v2_q7b_base_test_sensor.jsonl
+  n=60 valid=0.45 QR=0.222  type shares: eo 0.42, radar 0.25, rf 0.19, ac 0.08, rid 0.07
+  answers with 'ac': 5/27 valid answers
+  instances where ceiling without 'ac' < 0.9: n=5, model QR 0.175 (ceiling 0.652); other instances: n=55, model QR 0.226
+mlx_v2_q7b_grpo_s0_test_sensor.jsonl
+  n=60 valid=1.00 QR=0.853  type shares: rf 0.84, eo 0.16
+  answers with 'ac': 0/60 valid answers
+  instances where ceiling without 'ac' < 0.9: n=5, model QR 0.530 (ceiling 0.652); other instances: n=55, model QR 0.882
+mlx_v2_q7b_grpo_s1_test_sensor.jsonl
+  n=60 valid=1.00 QR=0.871  type shares: rf 0.83, eo 0.11, ac 0.07
+  answers with 'ac': 5/60 valid answers
+  instances where ceiling without 'ac' < 0.9: n=5, model QR 0.763 (ceiling 0.652); other instances: n=55, model QR 0.881
+mlx_v2_q7b_grpo_s2_test_sensor.jsonl
+  n=60 valid=0.97 QR=0.833  type shares: rf 0.83, eo 0.10, ac 0.07
+  answers with 'ac': 6/58 valid answers
+  instances where ceiling without 'ac' < 0.9: n=5, model QR 0.529 (ceiling 0.652); other instances: n=55, model QR 0.861
+mlx_v2_q7b_sft_test_sensor.jsonl
+  n=60 valid=0.85 QR=0.718  type shares: rf 0.82, eo 0.10, ac 0.07, radar 0.01
+  answers with 'ac': 3/51 valid answers
+  instances where ceiling without 'ac' < 0.9: n=5, model QR 0.298 (ceiling 0.652); other instances: n=55, model QR 0.757
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2600.31it/s]
+29 instances with both eo and rf usable
+[4/29] 33 s
+[8/29] 63 s
+[12/29] 84 s
+[16/29] 105 s
+[20/29] 134 s
+[24/29] 163 s
+[28/29] 188 s
+[29/29] 205 s
+orig: QR 0.932 valid 1.00 share of eo among eo+rf: 0.00
+swap: QR 0.935 valid 1.00 share of eo among eo+rf: 0.00
+instances where eo has the longer range originally: 1/29
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2498.59it/s]
+29 instances with both eo and rf usable
+[4/29] 32 s
+[8/29] 60 s
+[12/29] 81 s
+[16/29] 101 s
+[20/29] 128 s
+[24/29] 157 s
+[28/29] 183 s
+[29/29] 200 s
+orig: QR 0.911 valid 0.97 share of eo among eo+rf: 0.00
+swap: QR 0.912 valid 0.97 share of eo among eo+rf: 0.00
+instances where eo has the longer range originally: 1/29

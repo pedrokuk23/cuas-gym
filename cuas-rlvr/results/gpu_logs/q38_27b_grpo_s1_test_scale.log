@@ -1,0 +1,138 @@
+
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/851 [00:00<02:54,  4.86it/s]
+Loading weights:   0%|          | 2/851 [00:00<02:55,  4.85it/s]
+Loading weights:   3%|▎         | 23/851 [00:00<00:12, 64.18it/s]
+Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.87it/s]
+Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.06it/s]
+Loading weights:  10%|▉         | 82/851 [00:00<00:05, 141.67it/s]
+Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.41it/s]
+Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 196.54it/s]
+Loading weights:  18%|█▊        | 153/851 [00:01<00:03, 178.93it/s]
+Loading weights:  20%|██        | 174/851 [00:01<00:03, 186.79it/s]
+Loading weights:  24%|██▎       | 200/851 [00:01<00:03, 205.35it/s]
+Loading weights:  26%|██▌       | 222/851 [00:01<00:03, 203.76it/s]
+Loading weights:  29%|██▊       | 243/851 [00:01<00:03, 196.03it/s]
+Loading weights:  31%|███       | 264/851 [00:01<00:03, 193.14it/s]
+Loading weights:  34%|███▍      | 291/851 [00:01<00:02, 213.88it/s]
+Loading weights:  37%|███▋      | 313/851 [00:01<00:02, 184.39it/s]
+Loading weights:  40%|████      | 344/851 [00:02<00:02, 213.94it/s]
+Loading weights:  43%|████▎     | 367/851 [00:02<00:02, 188.91it/s]
+Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 211.10it/s]
+Loading weights:  49%|████▉     | 418/851 [00:02<00:02, 191.18it/s]
+Loading weights:  52%|█████▏    | 439/851 [00:02<00:02, 195.80it/s]
+Loading weights:  55%|█████▍    | 465/851 [00:02<00:01, 210.82it/s]
+Loading weights:  57%|█████▋    | 487/851 [00:02<00:01, 207.41it/s]
+Loading weights:  60%|█████▉    | 509/851 [00:02<00:01, 202.64it/s]
+Loading weights:  62%|██████▏   | 530/851 [00:03<00:01, 194.66it/s]
+Loading weights:  65%|██████▌   | 557/851 [00:03<00:01, 207.21it/s]
+Loading weights:  68%|██████▊   | 578/851 [00:03<00:01, 187.43it/s]
+Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 216.25it/s]
+Loading weights:  74%|███████▍  | 632/851 [00:03<00:01, 190.98it/s]
+Loading weights:  78%|███████▊  | 662/851 [00:03<00:00, 216.82it/s]
+Loading weights:  80%|████████  | 685/851 [00:03<00:00, 191.48it/s]
+Loading weights:  84%|████████▍ | 715/851 [00:03<00:00, 216.29it/s]
+Loading weights:  87%|████████▋ | 738/851 [00:04<00:00, 194.24it/s]
+Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 217.64it/s]
+Loading weights:  93%|█████████▎| 792/851 [00:04<00:00, 197.34it/s]
+Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 215.89it/s]
+Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.47it/s]
+Loading weights: 100%|██████████| 851/851 [00:04<00:00, 184.65it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/trainer/workspace/cuas/python/gpu/eval_hf.py", line 87, in <module>
+    main()
+    ~~~~^^
+  File "/home/trainer/workspace/cuas/python/gpu/eval_hf.py", line 64, in main
+    gen = model.generate(**enc, max_new_tokens=a.max_tokens, do_sample=a.temp > 0, temperature=a.temp if a.temp > 0 else None,
+                         top_p=None, top_k=None, pad_token_id=tok.pad_token_id)
+  File "/home/trainer/venv/lib/python3.13/site-packages/peft/peft_model.py", line 2242, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/generation/utils.py", line 2989, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/generation/utils.py", line 3189, in _sample
+    outputs = self._prefill(
+        input_ids,
+    ...<2 lines>...
+        is_first_iteration=not generation_config.is_assistant,
+    )
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/generation/utils.py", line 4300, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1709, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1278, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 111, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 875, in forward
+    hidden_states = self.linear_attn(
+        hidden_states=hidden_states,
+    ...<2 lines>...
+        **kwargs,
+    )
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/trainer/venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/integrations/accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 625, in forward
+    core_attn_out, last_recurrent_state = torch_chunk_gated_delta_rule(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        query,
+        ^^^^^^
+    ...<8 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/integrations/hub_kernels.py", line 1051, in wrapped
+    return implementation(*args, **kwargs)
+  File "/home/trainer/venv/lib/python3.13/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 399, in torch_chunk_gated_delta_rule
+    query = query * cum_decay.exp().unsqueeze(-1)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 476.94 MiB is free. Including non-PyTorch memory, this process has 30.86 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.62 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

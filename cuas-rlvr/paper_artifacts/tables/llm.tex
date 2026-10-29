@@ -1,0 +1,24 @@
+\multirow{5}{*}{In-distribution} & Geometric heuristic & -- & 0.734 [0.657, 0.805] & 0.07 \\
+ & Qwen2.5-7B, zero-shot & 53 & 0.209 [0.141, 0.282] & 0.00 \\
+ & + SFT & 92 & 0.694 [0.616, 0.764] & 0.00 \\
+ & + SFT + GRPO, hybrid reward & 100 & 0.805 [0.756, 0.850] & 0.31 \\
+ & + SFT + GRPO, outcome reward & 100 & 0.826 [0.783, 0.863] & 0.37 \\
+\midrule
+\multirow{5}{*}{Unseen terrain} & Geometric heuristic & -- & 0.673 [0.595, 0.748] & 0.07 \\
+ & Qwen2.5-7B, zero-shot & 52 & 0.208 [0.144, 0.274] & 0.00 \\
+ & + SFT & 85 & 0.587 [0.508, 0.665] & 0.00 \\
+ & + SFT + GRPO, hybrid reward & 98 & 0.759 [0.704, 0.810] & 0.00 \\
+ & + SFT + GRPO, outcome reward & 100 & 0.771 [0.725, 0.816] & 0.16 \\
+\midrule
+\multirow{5}{*}{Unseen sensor} & Geometric heuristic & -- & 0.486 [0.418, 0.559] & 0.01 \\
+ & Qwen2.5-7B, zero-shot & 42 & 0.185 [0.115, 0.259] & 0.00 \\
+ & + SFT & 92 & 0.707 [0.627, 0.782] & 0.00 \\
+ & + SFT + GRPO, hybrid reward & 100 & 0.849 [0.811, 0.881] & 0.35 \\
+ & + SFT + GRPO, outcome reward & 100 & 0.855 [0.814, 0.893] & 0.32 \\
+\midrule
+\multirow{5}{*}{Scale} & Geometric heuristic & -- & 0.757 [0.612, 0.864] & 0.06 \\
+ & Qwen2.5-7B, zero-shot & 75 & 0.215 [0.134, 0.309] & 0.00 \\
+ & + SFT & 80 & 0.728 [0.548, 0.881] & 0.00 \\
+ & + SFT + GRPO, hybrid reward & 85 & 0.778 [0.612, 0.910] & 0.00 \\
+ & + SFT + GRPO, outcome reward & 100 & 0.912 [0.865, 0.953] & 0.67 \\
+\bottomrule

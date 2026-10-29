@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:   0%|          | 1/851 [00:00<02:53,  4.89it/s]Loading weights:   0%|          | 2/851 [00:00<02:54,  4.86it/s]Loading weights:   3%|▎         | 24/851 [00:00<00:12, 66.19it/s]Loading weights:   5%|▍         | 42/851 [00:00<00:08, 97.78it/s]Loading weights:   8%|▊         | 65/851 [00:00<00:05, 135.87it/s]Loading weights:  10%|▉         | 82/851 [00:00<00:05, 141.90it/s]Loading weights:  12%|█▏        | 101/851 [00:00<00:04, 152.66it/s]Loading weights:  16%|█▌        | 132/851 [00:01<00:03, 197.09it/s]Loading weights:  18%|█▊        | 154/851 [00:01<00:03, 175.22it/s]Loading weights:  22%|██▏       | 183/851 [00:01<00:03, 205.27it/s]Loading weights:  24%|██▍       | 205/851 [00:01<00:03, 191.68it/s]Loading weights:  27%|██▋       | 227/851 [00:01<00:03, 191.55it/s]Loading weights:  30%|██▉       | 254/851 [00:01<00:02, 205.10it/s]Loading weights:  33%|███▎      | 278/851 [00:01<00:02, 207.90it/s]Loading weights:  35%|███▌      | 300/851 [00:01<00:02, 211.13it/s]Loading weights:  38%|███▊      | 322/851 [00:02<00:02, 196.64it/s]Loading weights:  41%|████      | 345/851 [00:02<00:02, 204.40it/s]Loading weights:  43%|████▎     | 366/851 [00:02<00:02, 184.70it/s]Loading weights:  46%|████▋     | 395/851 [00:02<00:02, 211.99it/s]Loading weights:  49%|████▉     | 417/851 [00:02<00:02, 196.04it/s]Loading weights:  51%|█████▏    | 438/851 [00:02<00:02, 199.59it/s]Loading weights:  55%|█████▍    | 464/851 [00:02<00:01, 215.17it/s]Loading weights:  57%|█████▋    | 487/851 [00:02<00:01, 205.04it/s]Loading weights:  60%|█████▉    | 508/851 [00:02<00:01, 197.91it/s]Loading weights:  62%|██████▏   | 529/851 [00:03<00:01, 191.50it/s]Loading weights:  65%|██████▌   | 557/851 [00:03<00:01, 207.72it/s]Loading weights:  68%|██████▊   | 578/851 [00:03<00:01, 187.92it/s]Loading weights:  72%|███████▏  | 609/851 [00:03<00:01, 216.95it/s]Loading weights:  74%|███████▍  | 632/851 [00:03<00:01, 191.67it/s]Loading weights:  78%|███████▊  | 662/851 [00:03<00:00, 217.44it/s]Loading weights:  80%|████████  | 685/851 [00:03<00:00, 192.15it/s]Loading weights:  84%|████████▍ | 715/851 [00:03<00:00, 216.99it/s]Loading weights:  87%|████████▋ | 738/851 [00:04<00:00, 194.85it/s]Loading weights:  90%|█████████ | 768/851 [00:04<00:00, 218.40it/s]Loading weights:  93%|█████████▎| 792/851 [00:04<00:00, 197.96it/s]Loading weights:  97%|█████████▋| 822/851 [00:04<00:00, 216.49it/s]Loading weights:  99%|█████████▉| 845/851 [00:04<00:00, 199.98it/s]Loading weights: 100%|██████████| 851/851 [00:04<00:00, 185.25it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[2/40] 29 s, 14.3 s per answer, mean QR so far 1.000
+[4/40] 85 s, 28.1 s per answer, mean QR so far 0.990
+[6/40] 139 s, 27.3 s per answer, mean QR so far 0.993
+[8/40] 165 s, 13.0 s per answer, mean QR so far 0.995
+[10/40] 218 s, 26.3 s per answer, mean QR so far 0.971
+[12/40] 250 s, 15.9 s per answer, mean QR so far 0.971
+[14/40] 285 s, 17.7 s per answer, mean QR so far 0.968
+[16/40] 343 s, 28.8 s per answer, mean QR so far 0.960
+[18/40] 368 s, 12.8 s per answer, mean QR so far 0.964
+[20/40] 395 s, 13.3 s per answer, mean QR so far 0.961
+[22/40] 421 s, 13.2 s per answer, mean QR so far 0.957
+[24/40] 452 s, 15.5 s per answer, mean QR so far 0.959
+[26/40] 482 s, 15.0 s per answer, mean QR so far 0.962
+[28/40] 512 s, 15.0 s per answer, mean QR so far 0.962
+[30/40] 575 s, 31.2 s per answer, mean QR so far 0.962
+[32/40] 622 s, 23.5 s per answer, mean QR so far 0.962
+[34/40] 676 s, 27.3 s per answer, mean QR so far 0.963
+[36/40] 716 s, 19.6 s per answer, mean QR so far 0.965
+[38/40] 772 s, 28.4 s per answer, mean QR so far 0.962
+[40/40] 796 s, 11.9 s per answer, mean QR so far 0.963
+test_scale: n=40 valid=1.000 QR mean=0.963 tokens=730

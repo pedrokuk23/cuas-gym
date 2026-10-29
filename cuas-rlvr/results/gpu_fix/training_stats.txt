@@ -1,0 +1,17 @@
+# python3 -m cuas_rlvr.truncation_report --ckpt ckpt  (grpofix = control with cut answers kept in the loss)
+run                        clip<120 clip>=120 valid<120 valid>=120 len<120 len>=120
+q38_27b_grpo_s0               0.000     0.002     0.989      0.992     340      361
+q38_27b_grpo_s1               0.006     0.000     0.982      0.992     371      340
+q38_27b_grpo_s2               0.001     0.037     0.974      0.953     336      319
+q38_27banon_grpo_s0           0.003     0.113     0.959      0.858     347      554
+q38_27banon_grpo_s1           0.025     0.015     0.958      0.963     368      356
+q38_27banon_grpo_s2           0.013     0.001     0.965      0.981     340      361
+q38_27banon_grpofix_s0        0.000     0.003     0.983      0.974     320      292
+q38_27banon_grpofix_s1        0.000     0.001     0.976      0.985     336      382
+q38_27banon_grpofix_s2        0.003     0.004     0.973      0.978     354      394
+q3_8b_grpo_s0                 0.001     0.000     0.974      0.999     349      346
+q3_8b_grpo_s1                 0.000     0.000     0.981      0.976     329      359
+q3_8b_grpo_s2                 0.000     0.000     0.966      0.995     333      335
+q3_8banon_grpo_s0             0.000     0.007     0.963      0.976     312      345
+q3_8banon_grpo_s1             0.007     0.017     0.955      0.972     363      381
+q3_8banon_grpo_s2             0.006     0.000     0.942      0.978     343      337

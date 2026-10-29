@@ -1,0 +1,99 @@
+=== [q3_8b] baseline (Qwen/Qwen3-8B, no thinking)
+   (exists) results/gpu/q3_8b_base_test_id.jsonl
+   (exists) results/gpu/q3_8b_base_test_terrain.jsonl
+   (exists) results/gpu/q3_8b_base_test_sensor.jsonl
+   (exists) results/gpu/q3_8b_base_test_scale.jsonl
+=== [q3_8b] SFT
+100%|██████████| 105/105 [09:46<00:00,  5.61s/it]                                                 {'train_runtime': '587.4', 'train_samples_per_second': '1.43', 'train_steps_per_second': '0.179', 'train_loss': '0.17', 'epoch': '3'}
+=== [q3_8b] checkpoint selection on the valid split
+test_id: n=20 valid=0.150 QR mean=0.093 tokens=1214
+test_id: n=20 valid=1.000 QR mean=0.721 tokens=352
+test_id: n=20 valid=0.950 QR mean=0.689 tokens=357
+test_id: n=20 valid=0.100 QR mean=0.086 tokens=1431
+test_id: n=20 valid=0.750 QR mean=0.472 tokens=602
+test_id: n=20 valid=0.650 QR mean=0.407 tokens=558
+test_id: n=20 valid=0.950 QR mean=0.623 tokens=372
+test_id: n=20 valid=0.900 QR mean=0.611 tokens=367
+test_id: n=20 valid=0.950 QR mean=0.616 tokens=373
+test_id: n=20 valid=0.950 QR mean=0.704 tokens=351
+test_id: n=20 valid=0.950 QR mean=0.703 tokens=355
+test_id: n=20 valid=0.950 QR mean=0.689 tokens=357
+checkpoint-100 0.721
+checkpoint-80 0.704
+checkpoint-90 0.703
+checkpoint-105 0.689
+final 0.689
+checkpoint-50 0.623
+checkpoint-70 0.616
+checkpoint-60 0.611
+checkpoint-30 0.472
+checkpoint-40 0.407
+checkpoint-10 0.093
+checkpoint-20 0.086
+   chosen: checkpoint-100
+=== [q3_8b] GRPO, seeds: 0 1 2
+100%|██████████| 300/300 [1:26:59<00:00, 17.40s/it]                                                   {'train_runtime': '5221', 'train_samples_per_second': '0.46', 'train_steps_per_second': '0.057', 'train_loss': '-0.01113', 'epoch': '1'}
+test_id: n=60 valid=1.000 QR mean=0.842 tokens=364
+test_terrain: n=60 valid=1.000 QR mean=0.760 tokens=339
+test_sensor: n=60 valid=1.000 QR mean=0.853 tokens=386
+test_scale: n=40 valid=1.000 QR mean=0.939 tokens=751
+100%|██████████| 300/300 [1:27:57<00:00, 19.98s/it]                                                   {'train_runtime': '5278', 'train_samples_per_second': '0.455', 'train_steps_per_second': '0.057', 'train_loss': '-0.008533', 'epoch': '1'}
+test_id: n=60 valid=0.950 QR mean=0.783 tokens=408
+test_terrain: n=60 valid=0.950 QR mean=0.730 tokens=392
+test_sensor: n=60 valid=1.000 QR mean=0.833 tokens=381
+test_scale: n=40 valid=0.975 QR mean=0.880 tokens=779
+100%|██████████| 300/300 [1:25:35<00:00, 18.37s/it]                                                   {'train_runtime': '5137', 'train_samples_per_second': '0.467', 'train_steps_per_second': '0.058', 'train_loss': '-0.01177', 'epoch': '1'}
+test_id: n=60 valid=0.983 QR mean=0.824 tokens=373
+test_terrain: n=60 valid=1.000 QR mean=0.758 tokens=333
+test_sensor: n=60 valid=1.000 QR mean=0.857 tokens=353
+test_scale: n=40 valid=1.000 QR mean=0.908 tokens=812
+=== [q3_8banon] baseline (Qwen/Qwen3-8B, no thinking)
+test_id: n=60 valid=0.583 QR mean=0.309 tokens=254
+test_terrain: n=60 valid=0.567 QR mean=0.265 tokens=259
+test_sensor: n=60 valid=0.633 QR mean=0.351 tokens=289
+test_scale: n=40 valid=0.850 QR mean=0.417 tokens=210
+=== [q3_8banon] SFT
+100%|██████████| 105/105 [09:37<00:00,  5.52s/it]                                                 {'train_runtime': '578.2', 'train_samples_per_second': '1.453', 'train_steps_per_second': '0.182', 'train_loss': '0.1568', 'epoch': '3'}
+=== [q3_8banon] checkpoint selection on the valid split
+test_id: n=20 valid=0.200 QR mean=0.138 tokens=973
+test_id: n=20 valid=1.000 QR mean=0.716 tokens=349
+test_id: n=20 valid=1.000 QR mean=0.726 tokens=352
+test_id: n=20 valid=0.600 QR mean=0.355 tokens=466
+test_id: n=20 valid=0.850 QR mean=0.548 tokens=375
+test_id: n=20 valid=0.900 QR mean=0.569 tokens=460
+test_id: n=20 valid=0.850 QR mean=0.594 tokens=362
+test_id: n=20 valid=0.850 QR mean=0.678 tokens=350
+test_id: n=20 valid=0.750 QR mean=0.536 tokens=399
+test_id: n=20 valid=0.900 QR mean=0.648 tokens=353
+test_id: n=20 valid=1.000 QR mean=0.728 tokens=349
+test_id: n=20 valid=1.000 QR mean=0.726 tokens=352
+checkpoint-90 0.728
+final 0.726
+checkpoint-105 0.726
+checkpoint-100 0.716
+checkpoint-60 0.678
+checkpoint-80 0.648
+checkpoint-50 0.594
+checkpoint-40 0.569
+checkpoint-30 0.548
+checkpoint-70 0.536
+checkpoint-20 0.355
+checkpoint-10 0.138
+   chosen: checkpoint-90
+=== [q3_8banon] GRPO, seeds: 0 1 2
+100%|██████████| 300/300 [1:32:43<00:00, 26.60s/it]                                                   {'train_runtime': '5564', 'train_samples_per_second': '0.431', 'train_steps_per_second': '0.054', 'train_loss': '-0.005209', 'epoch': '1'}
+test_id: n=60 valid=0.967 QR mean=0.839 tokens=431
+test_terrain: n=60 valid=1.000 QR mean=0.800 tokens=350
+test_sensor: n=60 valid=1.000 QR mean=0.885 tokens=380
+test_scale: n=40 valid=0.975 QR mean=0.906 tokens=762
+100%|██████████| 300/300 [1:38:56<00:00, 21.15s/it]                                                   {'train_runtime': '5937', 'train_samples_per_second': '0.404', 'train_steps_per_second': '0.051', 'train_loss': '-0.03974', 'epoch': '1'}
+test_id: n=60 valid=1.000 QR mean=0.871 tokens=388
+test_terrain: n=60 valid=1.000 QR mean=0.788 tokens=353
+test_sensor: n=60 valid=1.000 QR mean=0.854 tokens=369
+test_scale: n=40 valid=0.975 QR mean=0.900 tokens=797
+100%|██████████| 300/300 [1:30:25<00:00, 18.53s/it]                                                   {'train_runtime': '5426', 'train_samples_per_second': '0.442', 'train_steps_per_second': '0.055', 'train_loss': '-0.006313', 'epoch': '1'}
+test_id: n=60 valid=1.000 QR mean=0.893 tokens=367
+test_terrain: n=60 valid=1.000 QR mean=0.806 tokens=314
+test_sensor: n=60 valid=1.000 QR mean=0.893 tokens=354
+test_scale: n=40 valid=1.000 QR mean=0.940 tokens=771
+=== done: Wed Oct 21 11:15:20 PM -03 2026

@@ -1,0 +1,20 @@
+\multirow{5}{*}{Radar detection} & Marcum (non-fluctuating): $P_d$ at 13.2~dB, $P_{fa}=10^{-6}$, 1 pulse & 0.902 & 0.911 & exact Marcum $Q$ (numerical); module via Albersheim's approximation \cite{albersheim1981closed} \\
+  & Swerling~1: $P_d$ at 21.14~dB & 0.900 & 0.896 & exact closed form $P_{fa}^{1/(1+\mathrm{SNR})}$; module via Shnidman \\
+  & Swerling~3: $P_d$ at 17.30~dB & 0.900 & 0.902 & numerical integration of the $\chi^2_4$ law; module via Shnidman \\
+  & Albersheim: SNR for $P_d=0.9$, $P_{fa}=10^{-6}$, 10 pulses & 4.9904~dB & 4.9904~dB & \cite{albersheim1981closed,mathworks2024radar} \\
+  & Radar equation: range at $P_d=0.9$ with $P_t = 3.1521\times10^{5}$~W & 35.0~km & 35.0~km & \cite{mathworks2024radar} \\
+\midrule
+\multirow{4}{*}{Propagation} & Knife-edge loss, $\nu=0$ & 6.0~dB & 6.03~dB & \cite{itu526} \\
+  & Knife-edge loss, $\nu=1$ & 13.9~dB & 13.93~dB & \cite{itu526} \\
+  & Rain, 10~GHz, 25~mm/h & 0.696~dB/km & 0.696~dB/km & $k$, $\alpha$ of \cite{itu838} \\
+  & Rain, 18~GHz, 25~mm/h (interpolated coefficients) & 2.30~dB/km & 2.29~dB/km & \cite{itu838} \\
+\midrule
+\multirow{3}{*}{Acoustic} & Air absorption, 1~kHz, 20$^\circ$C, 70\% RH & 5.0~dB/km & 4.98~dB/km & \cite{iso9613} \\
+  & Air absorption, 4~kHz, 20$^\circ$C, 70\% RH & 22.9~dB/km & 23.09~dB/km & \cite{iso9613} \\
+  & Air absorption, 500~Hz, 10$^\circ$C, 70\% RH & 1.9~dB/km & 1.92~dB/km & \cite{iso9613} \\
+\midrule
+\multirow{2}{*}{Line of sight} & Smooth earth ($k=4/3$), 100~m mast: lowest visible height at 60~km & 20.8~m & 20.8~m & $(D-\sqrt{2kRh})^2/2kR$ \\
+  & 50~m ridge at 1.99~km, 10~m mast, flat earth: shadow height at 6.01~km & 130.8~m & 131.3~m & similar triangles \\
+\midrule
+Localization & Two bearings at $90^\circ$, $\sigma=2^\circ$, 1~km & 49.4~m & 49.4~m & $\sqrt{2}\,\sigma D$ \\
+\bottomrule

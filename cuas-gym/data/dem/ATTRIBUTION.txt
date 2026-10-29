@@ -1,0 +1,12 @@
+Terrain data in this folder
+===========================
+
+Copernicus_DSM_COG_10_S24_00_W046_00_DEM.tif: Copernicus DEM GLO-30, tile S24 W046, unmodified, used to generate the
+CUAS-Gym instances. It is subject to the Copernicus DEM licence. Required attribution, to be kept with the data and
+shown in products made with it:
+
+  © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European
+  Union and ESA; all rights reserved
+
+Licence: Copernicus DEM licence (ESA / Copernicus Contributing Missions; GLO-30 free of charge for any lawful use,
+with the attribution above). Source: https://copernicus-dem-30m.s3.amazonaws.com/

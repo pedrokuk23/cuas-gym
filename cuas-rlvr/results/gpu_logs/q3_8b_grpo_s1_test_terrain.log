@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:36, 10.94it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:02, 156.91it/s]Loading weights:  18%|█▊        | 71/399 [00:00<00:01, 220.32it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:01, 254.78it/s]Loading weights:  35%|███▌      | 140/399 [00:00<00:00, 285.69it/s]Loading weights:  44%|████▍     | 175/399 [00:00<00:00, 304.08it/s]Loading weights:  52%|█████▏    | 209/399 [00:00<00:00, 314.84it/s]Loading weights:  61%|██████    | 242/399 [00:00<00:00, 319.13it/s]Loading weights:  69%|██████▉   | 275/399 [00:01<00:00, 315.60it/s]Loading weights:  77%|███████▋  | 308/399 [00:01<00:00, 319.56it/s]Loading weights:  85%|████████▌ | 341/399 [00:01<00:00, 318.66it/s]Loading weights:  94%|█████████▎| 374/399 [00:01<00:00, 314.94it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 286.53it/s]
+[8/60] 33 s, 4.2 s per answer, mean QR so far 0.779
+[16/60] 145 s, 14.0 s per answer, mean QR so far 0.668
+[24/60] 173 s, 3.4 s per answer, mean QR so far 0.678
+[32/60] 197 s, 3.0 s per answer, mean QR so far 0.711
+[40/60] 217 s, 2.5 s per answer, mean QR so far 0.725
+[48/60] 245 s, 3.4 s per answer, mean QR so far 0.730
+[56/60] 266 s, 2.7 s per answer, mean QR so far 0.730
+[60/60] 338 s, 18.1 s per answer, mean QR so far 0.730
+test_terrain: n=60 valid=0.950 QR mean=0.730 tokens=392

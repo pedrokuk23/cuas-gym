@@ -1,0 +1,91 @@
+=== [q38_27b] baseline (Qwen/Qwen3.8-27B, no thinking)
+=== [q38_27b] SFT
+100%|██████████| 105/105 [44:16<00:00, 25.61s/it]                                                 {'train_runtime': '2657', 'train_samples_per_second': '0.316', 'train_steps_per_second': '0.04', 'train_loss': '0.1005', 'epoch': '3'}
+=== [q38_27b] checkpoint selection on the valid split
+test_id: n=20 valid=0.850 QR mean=0.641 tokens=828
+test_id: n=20 valid=1.000 QR mean=0.812 tokens=362
+test_id: n=20 valid=1.000 QR mean=0.800 tokens=360
+test_id: n=20 valid=0.900 QR mean=0.629 tokens=356
+test_id: n=20 valid=1.000 QR mean=0.766 tokens=366
+test_id: n=20 valid=0.950 QR mean=0.748 tokens=366
+test_id: n=20 valid=0.950 QR mean=0.793 tokens=367
+test_id: n=20 valid=1.000 QR mean=0.807 tokens=378
+test_id: n=20 valid=1.000 QR mean=0.816 tokens=357
+test_id: n=20 valid=1.000 QR mean=0.807 tokens=357
+test_id: n=20 valid=1.000 QR mean=0.796 tokens=357
+test_id: n=20 valid=1.000 QR mean=0.800 tokens=360
+checkpoint-70 0.816
+checkpoint-100 0.812
+checkpoint-60 0.807
+checkpoint-80 0.807
+checkpoint-105 0.8
+final 0.8
+checkpoint-90 0.796
+checkpoint-50 0.793
+checkpoint-30 0.766
+checkpoint-40 0.748
+checkpoint-10 0.641
+checkpoint-20 0.629
+   chosen: checkpoint-70
+=== [q38_27b] GRPO, seeds: 0 1 2
+100%|██████████| 300/300 [4:09:11<00:00, 62.56s/it]                                                   {'train_runtime': '1.495e+04', 'train_samples_per_second': '0.161', 'train_steps_per_second': '0.02', 'train_loss': '-0.01143', 'epoch': '1'}
+test_id: n=60 valid=0.983 QR mean=0.904 tokens=418
+test_terrain: n=60 valid=1.000 QR mean=0.863 tokens=389
+test_sensor: n=60 valid=0.983 QR mean=0.906 tokens=439
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 476.94 MiB is free. Including non-PyTorch memory, this process has 30.86 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.62 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+100%|██████████| 300/300 [4:07:36<00:00, 49.87s/it]                                                   {'train_runtime': '1.486e+04', 'train_samples_per_second': '0.162', 'train_steps_per_second': '0.02', 'train_loss': '-0.009439', 'epoch': '1'}
+test_id: n=60 valid=1.000 QR mean=0.924 tokens=335
+test_terrain: n=60 valid=0.983 QR mean=0.864 tokens=300
+test_sensor: n=60 valid=1.000 QR mean=0.930 tokens=330
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 476.94 MiB is free. Including non-PyTorch memory, this process has 30.86 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.62 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+100%|██████████| 300/300 [4:24:51<00:00, 54.36s/it]                                                   {'train_runtime': '1.589e+04', 'train_samples_per_second': '0.151', 'train_steps_per_second': '0.019', 'train_loss': '-0.05116', 'epoch': '1'}
+test_id: n=60 valid=0.983 QR mean=0.885 tokens=404
+test_terrain: n=60 valid=1.000 QR mean=0.877 tokens=348
+test_sensor: n=60 valid=1.000 QR mean=0.926 tokens=398
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 476.94 MiB is free. Including non-PyTorch memory, this process has 30.86 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.62 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+=== [q38_27banon] baseline (Qwen/Qwen3.8-27B, no thinking)
+=== [q38_27banon] SFT
+100%|██████████| 105/105 [43:35<00:00, 25.16s/it]                                                 {'train_runtime': '2616', 'train_samples_per_second': '0.321', 'train_steps_per_second': '0.04', 'train_loss': '0.09735', 'epoch': '3'}
+=== [q38_27banon] checkpoint selection on the valid split
+test_id: n=20 valid=0.400 QR mean=0.362 tokens=1261
+test_id: n=20 valid=0.850 QR mean=0.701 tokens=355
+test_id: n=20 valid=0.850 QR mean=0.700 tokens=355
+test_id: n=20 valid=0.750 QR mean=0.605 tokens=353
+test_id: n=20 valid=0.850 QR mean=0.677 tokens=332
+test_id: n=20 valid=0.900 QR mean=0.710 tokens=351
+test_id: n=20 valid=0.850 QR mean=0.672 tokens=351
+test_id: n=20 valid=1.000 QR mean=0.791 tokens=344
+test_id: n=20 valid=0.750 QR mean=0.629 tokens=354
+test_id: n=20 valid=0.800 QR mean=0.666 tokens=358
+test_id: n=20 valid=0.800 QR mean=0.666 tokens=358
+test_id: n=20 valid=0.850 QR mean=0.700 tokens=355
+checkpoint-60 0.791
+checkpoint-40 0.71
+checkpoint-100 0.701
+final 0.7
+checkpoint-105 0.7
+checkpoint-30 0.677
+checkpoint-50 0.672
+checkpoint-80 0.666
+checkpoint-90 0.666
+checkpoint-70 0.629
+checkpoint-20 0.605
+checkpoint-10 0.362
+   chosen: checkpoint-60
+=== [q38_27banon] GRPO, seeds: 0 1 2
+100%|██████████| 300/300 [6:01:01<00:00, 90.65s/it]                                                   {'train_runtime': '2.166e+04', 'train_samples_per_second': '0.111', 'train_steps_per_second': '0.014', 'train_loss': '-0.1512', 'epoch': '1'}
+test_id: n=60 valid=0.967 QR mean=0.866 tokens=603
+test_terrain: n=60 valid=1.000 QR mean=0.868 tokens=517
+test_sensor: n=60 valid=0.983 QR mean=0.898 tokens=613
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 484.94 MiB is free. Including non-PyTorch memory, this process has 30.85 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.61 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+100%|██████████| 300/300 [4:27:23<00:00, 51.25s/it]                                                   {'train_runtime': '1.604e+04', 'train_samples_per_second': '0.15', 'train_steps_per_second': '0.019', 'train_loss': '-0.04846', 'epoch': '1'}
+test_id: n=60 valid=1.000 QR mean=0.912 tokens=340
+test_terrain: n=60 valid=1.000 QR mean=0.881 tokens=295
+test_sensor: n=60 valid=1.000 QR mean=0.912 tokens=328
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 484.94 MiB is free. Including non-PyTorch memory, this process has 30.85 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.61 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+100%|██████████| 300/300 [4:10:12<00:00, 52.60s/it]                                                   {'train_runtime': '1.501e+04', 'train_samples_per_second': '0.16', 'train_steps_per_second': '0.02', 'train_loss': '-0.01776', 'epoch': '1'}
+test_id: n=60 valid=0.983 QR mean=0.894 tokens=368
+test_terrain: n=60 valid=1.000 QR mean=0.868 tokens=323
+test_sensor: n=60 valid=0.983 QR mean=0.909 tokens=371
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 516.00 MiB. GPU 0 has a total capacity of 31.44 GiB of which 484.94 MiB is free. Including non-PyTorch memory, this process has 30.85 GiB memory in use. Of the allocated memory 27.62 GiB is allocated by PyTorch, and 2.61 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+=== done: Fri Oct 23 04:22:59 PM -03 2026

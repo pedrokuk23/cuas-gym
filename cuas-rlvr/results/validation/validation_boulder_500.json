@@ -1,0 +1,42 @@
+{
+ "500": {
+  "cells": 9632,
+  "single": {
+   "Radar site1": 0.37749169435215946,
+   "Radar site2": 0.38237126245847175,
+   "Radar site3": 0.7459509966777409,
+   "Radar site4": 0.3272425249169435,
+   "Radar site5": 0.432828073089701
+  },
+  "greedy3": [
+   "Radar site3",
+   "Radar site5",
+   "Radar site2"
+  ],
+  "greedy3_coverage": 0.7620431893687708,
+  "all5_coverage": 0.7631852159468439,
+  "elev_min": 1592.7398681640625,
+  "elev_max": 3945.76025390625,
+  "elev_mean": 2380.356689453125
+ },
+ "250": {
+  "cells": 9632,
+  "single": {
+   "Radar site1": 0.24013704318936877,
+   "Radar site2": 0.19954318936877077,
+   "Radar site3": 0.5230481727574751,
+   "Radar site4": 0.16341362126245848,
+   "Radar site5": 0.30865863787375414
+  },
+  "greedy3": [
+   "Radar site3",
+   "Radar site5",
+   "Radar site2"
+  ],
+  "greedy3_coverage": 0.5374792358803987,
+  "all5_coverage": 0.5404900332225914,
+  "elev_min": 1592.7398681640625,
+  "elev_max": 3945.76025390625,
+  "elev_mean": 2380.356689453125
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "format": "multisensor-scenario",
+ "version": 2,
+ "saved": "2026-10-17T00:00:00Z",
+ "description": "Validation scenario after the MathWorks example \"Planning Radar Network Coverage over Terrain\" (Radar Toolbox): five candidate radar sites near Boulder, Colorado, 10 m masts, 10 GHz, 38 dB gain, Pt = 3.1521e5 W, 5 m range resolution (B = c/10 m), 10 pulses, Pd 0.9, Pfa 1e-6, RCS 0.1 m², 35 km maximum range, target at 500 m above ground (change to 250 m for the second case). Area = the example's 39.5–40° N × 105.6–105.1° W window. Differences: MATLAB uses TIREM or Longley–Rice path loss over the SRTM 3″ terrain; this module uses line of sight on the 4/3-Earth profile with free-space loss, so coverage should agree where the path is clear and this module is more optimistic just past ridges. Terrain: Copernicus N39 W106 (downloaded by the server) or the automatic terrain.",
+ "areas": [
+  {
+   "id": 1,
+   "name": "MATLAB example window",
+   "color": "#3ee0ff",
+   "role": "coverage",
+   "pts": [
+    [
+     39.5,
+     -105.6
+    ],
+    [
+     40.0,
+     -105.6
+    ],
+    [
+     40.0,
+     -105.1
+    ],
+    [
+     39.5,
+     -105.1
+    ]
+   ],
+   "reqs": [
+    {
+     "metric": "any",
+     "scope": "all",
+     "min": 50
+    }
+   ]
+  }
+ ],
+ "sensors": [
+  {
+   "type": "radar",
+   "name": "Radar site1",
+   "lat": 39.6055,
+   "lon": -105.1602,
+   "deployed": true,
+   "mast": 10,
+   "rMax": 35000,
+   "pdMin": 0.9,
+   "elMin": -90,
+   "elMax": 90,
+   "p": {
+    "pt": 315210.0,
+    "g": 38,
+    "f": 10,
+    "b": 29.979246,
+    "nf": 0,
+    "l": 0,
+    "n": 10,
+    "pfa": 1e-06,
+    "model": 0,
+    "gamma": -99,
+    "mp": 0,
+    "bwEl": 0
+   }
+  },
+  {
+   "type": "radar",
+   "name": "Radar site2",
+   "lat": 39.6481,
+   "lon": -105.1378,
+   "deployed": true,
+   "mast": 10,
+   "rMax": 35000,
+   "pdMin": 0.9,
+   "elMin": -90,
+   "elMax": 90,
+   "p": {
+    "pt": 315210.0,
+    "g": 38,
+    "f": 10,
+    "b": 29.979246,
+    "nf": 0,
+    "l": 0,
+    "n": 10,
+    "pfa": 1e-06,
+    "model": 0,
+    "gamma": -99,
+    "mp": 0,
+    "bwEl": 0
+   }
+  },
+  {
+   "type": "radar",
+   "name": "Radar site3",
+   "lat": 39.7015,
+   "lon": -105.1772,
+   "deployed": true,
+   "mast": 10,
+   "rMax": 35000,
+   "pdMin": 0.9,
+   "elMin": -90,
+   "elMax": 90,
+   "p": {
+    "pt": 315210.0,
+    "g": 38,
+    "f": 10,
+    "b": 29.979246,
+    "nf": 0,
+    "l": 0,
+    "n": 10,
+    "pfa": 1e-06,
+    "model": 0,
+    "gamma": -99,
+    "mp": 0,
+    "bwEl": 0
+   }
+  },
+  {
+   "type": "radar",
+   "name": "Radar site4",
+   "lat": 39.7469,
+   "lon": -105.2,
+   "deployed": true,
+   "mast": 10,
+   "rMax": 35000,
+   "pdMin": 0.9,
+   "elMin": -90,
+   "elMax": 90,
+   "p": {
+    "pt": 315210.0,
+    "g": 38,
+    "f": 10,
+    "b": 29.979246,
+    "nf": 0,
+    "l": 0,
+    "n": 10,
+    "pfa": 1e-06,
+    "model": 0,
+    "gamma": -99,
+    "mp": 0,
+    "bwEl": 0
+   }
+  },
+  {
+   "type": "radar",
+   "name": "Radar site5",
+   "lat": 39.8856,
+   "lon": -105.2181,
+   "deployed": true,
+   "mast": 10,
+   "rMax": 35000,
+   "pdMin": 0.9,
+   "elMin": -90,
+   "elMax": 90,
+   "p": {
+    "pt": 315210.0,
+    "g": 38,
+    "f": 10,
+    "b": 29.979246,
+    "nf": 0,
+    "l": 0,
+    "n": 10,
+    "pfa": 1e-06,
+    "model": 0,
+    "gamma": -99,
+    "mp": 0,
+    "bwEl": 0
+   }
+  }
+ ],
+ "settings": {
+  "cell": "1000",
+  "mesh": "center",
+  "sub": "1",
+  "dem": "geotiff",
+  "adapt": true,
+  "alt": "500",
+  "altRef": "AGL",
+  "kofn": "1",
+  "rcs": "0.1",
+  "fluct": "-1"
+ },
+ "nextId": 6,
+ "nextArea": 2,
+ "caps": {},
+ "routes": [],
+ "nextRoute": 1,
+ "classes": []
+}

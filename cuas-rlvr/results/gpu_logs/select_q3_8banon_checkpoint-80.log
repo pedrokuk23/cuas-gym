@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:11,  5.53it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:02, 153.08it/s]Loading weights:  18%|█▊        | 71/399 [00:00<00:01, 221.55it/s]Loading weights:  26%|██▌       | 104/399 [00:00<00:01, 258.74it/s]Loading weights:  35%|███▍      | 138/399 [00:00<00:00, 278.52it/s]Loading weights:  44%|████▍     | 175/399 [00:00<00:00, 302.22it/s]Loading weights:  53%|█████▎    | 213/399 [00:00<00:00, 317.55it/s]Loading weights:  62%|██████▏   | 246/399 [00:00<00:00, 317.55it/s]Loading weights:  70%|██████▉   | 279/399 [00:01<00:00, 317.29it/s]Loading weights:  78%|███████▊  | 312/399 [00:01<00:00, 319.03it/s]Loading weights:  86%|████████▋ | 345/399 [00:01<00:00, 319.71it/s]Loading weights:  95%|█████████▍| 378/399 [00:01<00:00, 319.79it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 286.61it/s]
+[8/20] 21 s, 2.6 s per answer, mean QR so far 0.449
+[16/20] 48 s, 3.3 s per answer, mean QR so far 0.632
+[20/20] 69 s, 5.3 s per answer, mean QR so far 0.648
+test_id: n=20 valid=0.900 QR mean=0.648 tokens=353

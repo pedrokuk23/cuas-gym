@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+cuas-rlvr/ckpt/*/adapters*
+cuas-rlvr/ckpt/*/checkpoint-*
+cuas-rlvr/ckpt/*/final/
+cuas-rlvr/results/gpu/
+cuas-rlvr/out/
+out/

@@ -1,0 +1,25 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2858.89it/s]
+0000100_adapters.safetensors: valid 0.75  QR 0.429
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 3038.62it/s]
+0000150_adapters.safetensors: valid 0.80  QR 0.584
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 3277.37it/s]
+0000200_adapters.safetensors: valid 0.70  QR 0.532
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1945.11it/s]
+0000250_adapters.safetensors: valid 0.60  QR 0.466
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1799.62it/s]
+0000300_adapters.safetensors: valid 0.70  QR 0.562
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1927.63it/s]
+0000350_adapters.safetensors: valid 0.90  QR 0.749
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 4913.28it/s]
+0000400_adapters.safetensors: valid 0.75  QR 0.604
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1694.90it/s]
+0000450_adapters.safetensors: valid 0.80  QR 0.661
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1576.74it/s]
+0000500_adapters.safetensors: valid 0.80  QR 0.615
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2144.45it/s]
+0000550_adapters.safetensors: valid 0.75  QR 0.618
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2644.58it/s]
+0000560_adapters.safetensors: valid 0.80  QR 0.656
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1595.40it/s]
+adapters.safetensors: valid 0.80  QR 0.656
+chosen 0000350_adapters.safetensors (QR 0.749, valid 0.90)

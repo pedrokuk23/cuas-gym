@@ -1,0 +1,28 @@
+\multirow{6}{*}{In-distribution} & Geometric heuristic & -- & 0.700 [0.621, 0.776] & 0.00 \\
+ & Geometric heuristic + budget completion & -- & 0.902 [0.867, 0.934] & 0.37 \\
+ & Qwen3-8B, zero-shot & 33 & 0.185 [0.112, 0.264] & 0.00 \\
+ & + SFT & 85 & 0.686 [0.592, 0.770] & 0.00 \\
+ & + SFT + GRPO (3 seeds) & 98 & 0.817 $\pm$ 0.030 [0.762, 0.862] & 0.09 \\
+ & + SFT + GRPO, anonymized inventory (3 seeds) & 99 & 0.868 $\pm$ 0.027 [0.832, 0.900] & 0.44 \\
+\midrule
+\multirow{6}{*}{Unseen terrain} & Geometric heuristic & -- & 0.622 [0.544, 0.699] & 0.02 \\
+ & Geometric heuristic + budget completion & -- & 0.835 [0.789, 0.876] & 0.12 \\
+ & Qwen3-8B, zero-shot & 33 & 0.140 [0.081, 0.208] & 0.00 \\
+ & + SFT & 85 & 0.632 [0.544, 0.714] & 0.00 \\
+ & + SFT + GRPO (3 seeds) & 98 & 0.749 $\pm$ 0.017 [0.696, 0.802] & 0.11 \\
+ & + SFT + GRPO, anonymized inventory (3 seeds) & 100 & 0.798 $\pm$ 0.009 [0.747, 0.842] & 0.31 \\
+\midrule
+\multirow{6}{*}{Unseen sensor} & Geometric heuristic & -- & 0.629 [0.556, 0.700] & 0.01 \\
+ & Geometric heuristic + budget completion & -- & 0.892 [0.857, 0.922] & 0.46 \\
+ & Qwen3-8B, zero-shot & 35 & 0.165 [0.099, 0.235] & 0.00 \\
+ & + SFT & 85 & 0.682 [0.586, 0.770] & 0.00 \\
+ & + SFT + GRPO (3 seeds) & 100 & 0.848 $\pm$ 0.013 [0.806, 0.884] & 0.43 \\
+ & + SFT + GRPO, anonymized inventory (3 seeds) & 100 & 0.877 $\pm$ 0.020 [0.840, 0.912] & 0.26 \\
+\midrule
+\multirow{6}{*}{Scale} & Geometric heuristic & -- & 0.765 [0.671, 0.856] & 0.09 \\
+ & Geometric heuristic + budget completion & -- & 0.960 [0.940, 0.977] & 0.78 \\
+ & Qwen3-8B, zero-shot & 78 & 0.300 [0.215, 0.401] & 0.00 \\
+ & + SFT & 72 & 0.643 [0.519, 0.779] & 0.00 \\
+ & + SFT + GRPO (3 seeds) & 99 & 0.909 $\pm$ 0.030 [0.871, 0.943] & 0.60 \\
+ & + SFT + GRPO, anonymized inventory (3 seeds) & 98 & 0.915 $\pm$ 0.022 [0.878, 0.947] & 0.63 \\
+\bottomrule

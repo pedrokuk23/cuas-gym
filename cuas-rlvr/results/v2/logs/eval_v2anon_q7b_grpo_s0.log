@@ -1,0 +1,37 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2805.55it/s]
+[8/60] 28 s, 3.5 s per answer, mean QR so far 0.717
+[16/60] 56 s, 3.5 s per answer, mean QR so far 0.772
+[24/60] 81 s, 3.1 s per answer, mean QR so far 0.805
+[32/60] 107 s, 3.3 s per answer, mean QR so far 0.786
+[40/60] 135 s, 3.5 s per answer, mean QR so far 0.792
+[48/60] 161 s, 3.3 s per answer, mean QR so far 0.781
+[56/60] 188 s, 3.4 s per answer, mean QR so far 0.779
+[60/60] 207 s, 4.6 s per answer, mean QR so far 0.771
+test_id: n=60 valid=0.933 QR mean=0.771 tokens=331
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2907.10it/s]
+[8/60] 28 s, 3.5 s per answer, mean QR so far 0.706
+[16/60] 50 s, 2.8 s per answer, mean QR so far 0.640
+[24/60] 73 s, 2.9 s per answer, mean QR so far 0.649
+[32/60] 98 s, 3.1 s per answer, mean QR so far 0.687
+[40/60] 121 s, 2.9 s per answer, mean QR so far 0.698
+[48/60] 146 s, 3.1 s per answer, mean QR so far 0.710
+[56/60] 169 s, 2.8 s per answer, mean QR so far 0.713
+[60/60] 182 s, 3.3 s per answer, mean QR so far 0.712
+test_terrain: n=60 valid=0.950 QR mean=0.712 tokens=298
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 2862.79it/s]
+[8/60] 27 s, 3.4 s per answer, mean QR so far 0.892
+[16/60] 54 s, 3.4 s per answer, mean QR so far 0.848
+[24/60] 80 s, 3.3 s per answer, mean QR so far 0.882
+[32/60] 106 s, 3.2 s per answer, mean QR so far 0.867
+[40/60] 133 s, 3.4 s per answer, mean QR so far 0.847
+[48/60] 156 s, 2.9 s per answer, mean QR so far 0.846
+[56/60] 183 s, 3.4 s per answer, mean QR so far 0.846
+[60/60] 200 s, 4.1 s per answer, mean QR so far 0.849
+test_sensor: n=60 valid=1.000 QR mean=0.849 tokens=336
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1693.30it/s]
+[8/40] 59 s, 7.4 s per answer, mean QR so far 0.714
+[16/40] 119 s, 7.5 s per answer, mean QR so far 0.799
+[24/40] 175 s, 7.0 s per answer, mean QR so far 0.833
+[32/40] 233 s, 7.2 s per answer, mean QR so far 0.846
+[40/40] 290 s, 7.1 s per answer, mean QR so far 0.792
+test_scale: n=40 valid=0.875 QR mean=0.792 tokens=746
