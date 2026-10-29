@@ -14,8 +14,9 @@ authors:
 license:
   - MIT
   - CC-BY-4.0
-# repository-code: "https://github.com/<org>/<repository>"   # fill in before release v1.0.0
-# doi: "10.5281/zenodo.XXXXXXX"                              # fill in with the reserved Zenodo DOI
+repository-code: "https://github.com/pedrokuk23/cuas-gym"
+doi: "10.5281/zenodo.23765967"
+date-released: "2026-10-29"
 preferred-citation:
   type: article
   title: "Learning to Plan Heterogeneous Counter-UAS Sensor Networks Over Terrain With Physics-Verified Rewards"

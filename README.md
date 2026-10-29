@@ -20,7 +20,7 @@ instances are stored once. On a system without symbolic links (for example Windo
 ## Quick start
 
 ```
-git clone <this repository> cuas
+git clone https://github.com/pedrokuk23/cuas-gym.git cuas
 cd cuas
 pip install -e cuas-gym
 (cd cuas-gym && python3 -m cuas_gym.tests.test_gym)                      # 24 checks
@@ -40,4 +40,4 @@ and detection matrices derive from the Copernicus DEM GLO-30 (Â© DLR e.V. 2010â€
 
 ## Citation
 
-See `CITATION.cff`. The repository is archived on Zenodo (DOI given in `CITATION.cff` and in the article).
+See `CITATION.cff`. Version 1.0.0 of this repository is archived on Zenodo: https://doi.org/10.5281/zenodo.23765967

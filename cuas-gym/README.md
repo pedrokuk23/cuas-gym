@@ -34,7 +34,7 @@ attenuation). The equations and parameters are in the supplementary material of 
 ## Install
 
 ```
-git clone <this repository> cuas          # one repository: cuas-gym/ and cuas-rlvr/
+git clone https://github.com/pedrokuk23/cuas-gym.git cuas          # one repository: cuas-gym/ and cuas-rlvr/
 pip install -e cuas/cuas-gym
 cd cuas/cuas-gym && python3 -m cuas_gym.tests.test_gym        # 24 checks, incl. instances generated afresh
 ```

@@ -14,7 +14,7 @@ the article.
 ## Setup
 
 ```
-git clone <this repository> cuas
+git clone https://github.com/pedrokuk23/cuas-gym.git cuas
 pip install -e cuas/cuas-gym
 cd cuas/cuas-rlvr      # all commands below run from this folder
 # data/gym and data/gym2 are relative links to ../cuas-gym/data/gym and ../cuas-gym/data/gym2 (instances stored once);
