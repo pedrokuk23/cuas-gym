@@ -30,8 +30,8 @@ figures); training needs the requirements below.
 |---|---|
 | Table 1 (sensor models) | equations and parameters in the supplementary material, Section S1 and Table S1; detection matrices in `../cuas-gym/data/gym2` |
 | Table 2 (training configurations) | `scripts/run_mac_v2.sh` (Qwen2.5-7B), `gpu/run_gpu.sh` (Qwen3-8B, Qwen3.8-27B), `cuas_rlvr/mlx_lora.yaml` |
-| Table 3 (planning quality with CIs; validity, seed SD and matrix lookups in Tables S5, S9, S10, S12, S13) | `paper_artifacts/tables/v2/baselines.tex`, `llm*.tex`; regenerate with `python3 -m cuas_gym.cli baselines ...` and the `report_v2` commands below |
-| Table 4 (answer length, latency, amortized time) | `results/latency/lat1_*.jsonl` (batch 1), `n_tokens`/`time_s` of `results/v2/*.jsonl` (batched); 27B NF4 zero-shot and SFT: `results/v2/mlx_q38_27b_basenf4_*`, `mlx_q38_27b*_sft_*` (from `gpu/extra_evals.sh`, raw outputs in `results/gpu_extra/`) |
+| Table 3 (planning quality with CIs; validity, seed SD and matrix lookups in Tables S5, S9, S10, S12, S13) | `paper_artifacts/tables/v2/baselines.tex`, `llm*.tex`; regenerate with `python3 -m cuas_gym.cli baselines ...` and the `report_v2` commands below; the 27B zero-shot row (NF4 backend) is printed by `report_extra` |
+| Table 4 (answer length, latency, amortized time) | `python3 -m cuas_rlvr.cost_table --results results/v2 --latency results/latency --out out/tables/v2` writes `cost.tex` (identical to `paper_artifacts/tables/v2/cost.tex`) from `results/latency/lat1_*.jsonl` (batch 1) and `n_tokens`/`time_s` of `results/v2/*.jsonl` (batched); 27B NF4 zero-shot and SFT outputs: `results/v2/mlx_q38_27b_basenf4_*`, `mlx_q38_27b*_sft_*` (from `gpu/extra_evals.sh`, raw outputs in `results/gpu_extra/`) |
 | Table 5 (use of the unseen acoustic array) | `report_v2` output (decisive instances), `cuas_rlvr.probe_types`, `results/v2/baselines_test_sensor.csv` |
 | Table 6 (probes) | `scripts/run_mac_v2.sh probes`, `scripts/probe_anon.sh`, `scripts/extend.sh`; outputs `results/v2/probe_*.jsonl` |
 | Fig. 1 (unseen-sensor instance, 7B planners) | `python3 -m cuas_rlvr.figure_map_rationale --data data/gym2 --iid test_sensor-000000 --panel "Reference=ref" --panel "7B, names=named:results/v2/mlx_v2_q7b_grpo_s0_test_sensor.jsonl" --panel "7B, properties=anon:results/v2/mlx_v2anon_q7b_grpo_s0_test_sensor.jsonl" --out paper_artifacts/figures/map_7b.pdf` (needs the Copernicus tile) |
@@ -39,6 +39,8 @@ figures); training needs the requirements below.
 | Fig. 3 (training curves) | `python3 -m cuas_rlvr.figure_curves --ckpt ckpt --mark q38_27banon:0 --out training_curves_all.pdf` |
 | Truncation control (supplementary, property-based 27B) | `gpu/fix27.sh` (GRPO with `--penalize-truncated`); answers of the three control seeds in `results/gpu_fix/*.jsonl`; training statistics `python3 -m cuas_rlvr.truncation_report --ckpt ckpt` (`results/gpu_fix/training_stats.txt`) and their summary with paired bootstrap intervals in `results/gpu_fix/summary.json` |
 | Learned surrogate + greedy (Table 3, Table 5, Tables S6--S7) | `python3 -m cuas_rlvr.surrogate --mode properties --seed 0` (seeds 0-2; also `--mode names`), outputs `results/v2/surrogate/surrogate_<mode>_s<seed>.csv`; tables and results by threat: `python3 -m cuas_rlvr.surrogate_report --results results/v2 --data data/gym2 --out out/tables/v2` (needs scikit-learn) |
+| Table S11 (27B zero-shot, NVFP4/vLLM) | `report_extra` writes `q38.tex` (identical to `paper_artifacts/tables/v2/q38.tex`) |
+| Table S13 (27B zero-shot on two serving backends) | printed by `report_extra` |
 | Paired differences and bootstrap intervals quoted in the text | printed by the `report_v2` commands (`mean_vs_geo`, `mean_vs_geo_complete`, `anon_vs_*`) |
 | Preliminary environment (supplementary tables) | `python3 -m cuas_rlvr.report --data data/gym --results results` |
 
@@ -55,7 +57,7 @@ backend, the 27B SFT test evaluations, and the batch-1 latency measurements.
 ## Reproducing the tables from the released outputs
 
 ```
-python3 -m cuas_rlvr.report    --data data/gym  --results results --out out          # version 1 (preliminary environment, Section VI-D)
+python3 -m cuas_rlvr.report    --data data/gym  --results results --out out          # version 1 (preliminary environment, Section VI-D, Table S8)
 python3 -m cuas_rlvr.report_v2 --results results/v2 --data data/gym2 --ckpt ckpt --out out                        # Qwen2.5-7B
 python3 -m cuas_rlvr.report_v2 --results results/v2 --data data/gym2 --ckpt ckpt --out out \
     --tag q3_8b --anon-tag q3_8banon --base-name Qwen3-8B --suffix _q3_8b                                             # Qwen3-8B
@@ -68,12 +70,14 @@ python3 -m cuas_rlvr.probe_types results/v2/mlx_v2_q7b_grpo_s0_test_sensor.jsonl
 # reference certificates of the five decisive instances (branch and bound without acoustic arrays, module of cuas-gym)
 python3 -m cuas_gym.ceiling --data data/gym2 --split test_sensor --type ac --certify --below 0.9 \
     --from-json results/v2/ceiling_test_sensor_ac.json --out results/v2/ceiling_certificates_ac.json
-# 27B on the NF4 backend, SFT vs GRPO, array use (valid answers only), single-request latency
-python3 -m cuas_rlvr.report_extra --results results/v2 --latency results/latency --data data/gym2
+# Table S11 (q38.tex); 27B on the NF4 backend, SFT vs GRPO, array use (valid answers only), single-request latency
+python3 -m cuas_rlvr.report_extra --results results/v2 --latency results/latency --data data/gym2 --out out/tables/v2
+# Table 4 (cost.tex)
+python3 -m cuas_rlvr.cost_table --results results/v2 --latency results/latency --out out/tables/v2
 ```
 
 Each command prints the paired differences and bootstrap intervals quoted in the text and writes the LaTeX tables
-(`out/tables/v2/llm*.tex`, identical to `paper_artifacts/tables/`) and the training-curve figures.
+(`out/tables/v2/*.tex` and, for version 1, `out/*.tex`, identical to `paper_artifacts/tables/`) and the training-curve figures.
 
 ## Re-running the training
 
@@ -114,7 +118,7 @@ export CUAS_API_KEY=...        # never store the key in a file
 
 | Path | Content |
 |---|---|
-| `cuas_rlvr/` | MLX training (`sft_mlx`, `grpo_mlx`, `mlx_common`, `select_sft`, `mlx_sft_data`), evaluation (`eval_mlx`), probes (`probe_swap`, `probe_types`), gradient diagnosis (`diag_grad`), tables and figures (`report`, `report_v2`, `surrogate_report`, `figure_instance`, `figure_map_rationale`), learned surrogate baseline (`surrogate`) |
+| `cuas_rlvr/` | MLX training (`sft_mlx`, `grpo_mlx`, `mlx_common`, `select_sft`, `mlx_sft_data`), evaluation (`eval_mlx`), probes (`probe_swap`, `probe_types`), gradient diagnosis (`diag_grad`), tables and figures (`report`, `report_v2`, `report_extra`, `cost_table`, `surrogate_report`, `truncation_report`, `figure_curves`, `figure_instance`, `figure_map_rationale`), supervised checkpoint selection (`pick_sft`), learned surrogate baseline (`surrogate`) |
 | `gpu/` | PyTorch/TRL pipeline: `sft_trl`, `grpo_trl` (verifier as GRPO reward), `eval_hf`, `merge_lora`, `run_gpu.sh`, `scale27.sh` |
 | `scripts/` | MLX pipelines (`run_mac.sh` version 1, `run_mac_v2.sh` version 2), probes, API evaluation |
 | `data/` | SFT data built from the reference solutions (`sft_train.jsonl` v1, `sft_train_v2.jsonl`, `sft_train_v2anon.jsonl`) |
@@ -124,7 +128,7 @@ export CUAS_API_KEY=...        # never store the key in a file
 | `results/gpu_logs/`, `results/gpu_selection/` | logs of the GPU runs and the checkpoint-selection answers |
 | `results/validation/` | validation of the physics module against the MathWorks Boulder scenario (`python3 -m cuas_gym.physics.tests.boulder`) |
 | `ckpt/<run>/log.jsonl` | per-step GRPO and SFT logs (reward, validity, quality ratio); adapters are not included |
-| `paper_artifacts/` | the tables and figures as they appear in the article |
+| `paper_artifacts/` | the tables and figures of the article and supplementary material (`tables/v2/`); version-1 tables in `tables/` |
 
 Every output record holds the instance id, the model's full answer text, the parsed placement, validity, quality
 ratio, process reward and answer length, so any number in the article can be recomputed or checked.

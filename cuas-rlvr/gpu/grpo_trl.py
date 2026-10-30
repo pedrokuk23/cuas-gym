@@ -3,7 +3,7 @@
 Same recipe as cuas_rlvr.grpo_mlx (G answers per instance at temperature 1, group-normalized advantages, one
 on-policy update per group, no KL term, token-level loss) expressed with trl.GRPOTrainer.
 
-    cd python && pip install -r gpu/requirements.txt
+    cd cuas-rlvr && pip install -r gpu/requirements.txt
     python3 -m gpu.grpo_trl --model Qwen/Qwen3.8-27B --adapter ckpt/q38_sft --data data/gym2 --out ckpt/q38_grpo_s0 \
         --reward outcome --steps 300 --group 8 --no-think
     # faster sampling with a vLLM worker on another GPU:

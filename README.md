@@ -40,4 +40,4 @@ and detection matrices derive from the Copernicus DEM GLO-30 (Â© DLR e.V. 2010â€
 
 ## Citation
 
-See `CITATION.cff`. Version 1.0.0 of this repository is archived on Zenodo: https://doi.org/10.5281/zenodo.23765967
+See `CITATION.cff`. Version 1.0.1 of this repository is archived on Zenodo: https://doi.org/10.5281/zenodo.23765967

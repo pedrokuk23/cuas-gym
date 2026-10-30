@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this benchmark, code or data, please cite the article below."
 title: "CUAS-Gym: benchmark, code, data, and model outputs"
-version: "1.0.0"
+version: "1.0.1"
 authors:
   - family-names: "Kukulka de Albuquerque"
     given-names: "Pedro"
@@ -16,7 +16,7 @@ license:
   - CC-BY-4.0
 repository-code: "https://github.com/pedrokuk23/cuas-gym"
 doi: "10.5281/zenodo.23765967"
-date-released: "2026-10-29"
+date-released: "2026-10-30"
 preferred-citation:
   type: article
   title: "Learning to Plan Heterogeneous Counter-UAS Sensor Networks Over Terrain With Physics-Verified Rewards"

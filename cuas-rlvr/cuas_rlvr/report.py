@@ -78,11 +78,10 @@ def main():
         f.write("\n".join(dataset_table(a.data)) + "\n\\bottomrule\n")
     with open(os.path.join(a.out, "baselines.tex"), "w") as f:
         f.write("\n".join(baseline_table(a.results)) + "\n\\bottomrule\n")
-    print(open(os.path.join(a.out, "dataset.tex")).read()); print(open(os.path.join(a.out, "baselines.tex")).read())
-
-
-if __name__ == "__main__":
-    main()
+    with open(os.path.join(a.out, "llm.tex"), "w") as f:
+        f.write("\n".join(llm_table(a.results)) + "\n")
+    for name in ("dataset", "baselines", "llm"):
+        print(open(os.path.join(a.out, f"{name}.tex")).read())
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -199,3 +198,7 @@ def warm_start(results, data, tag="q7b", stage="grpo_outcome"):
                          "q_greedy": v.F(G) / Fref, "ev_greedy": eg, "q_greedy_ls": v.F(LG) / Fref, "ev_greedy_ls": elg})
         out[sp] = rows
     return out
+
+
+if __name__ == "__main__":
+    main()

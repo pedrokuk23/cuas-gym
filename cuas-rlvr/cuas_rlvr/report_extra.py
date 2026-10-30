@@ -1,10 +1,11 @@
 """Tables and statistics of the extra 27B evaluations and of the latency runs (gpu/extra_evals.sh and the Apple-silicon run).
 
-    python3 -m cuas_rlvr.report_extra --results results/v2 --latency results/latency --data data/gym2
+    python3 -m cuas_rlvr.report_extra --results results/v2 --latency results/latency --data data/gym2 --out out/tables/v2
 
-Prints: 27B zero-shot on the NF4 training backend against the NVFP4/vLLM run (paired bootstrap), 27B SFT against
-SFT+GRPO and against zero-shot, single-request latencies, and the use of the unseen acoustic array (valid answers only)
-on the decisive instances of the unseen-sensor split.
+Writes q38.tex (Table S11: 27B zero-shot on the NVFP4/vLLM backend against the geometric heuristic, the supervised 7B
+checkpoint and the seed-averaged 7B GRPO model). Prints: 27B zero-shot on the NF4 training backend against the
+NVFP4/vLLM run (paired bootstrap), 27B SFT against SFT+GRPO and against zero-shot, single-request latencies, and the
+use of the unseen acoustic array (valid answers only) on the decisive instances of the unseen-sensor split.
 """
 import argparse
 import glob
@@ -15,7 +16,7 @@ import numpy as np
 
 from cuas_gym.cli import load
 from cuas_gym.prompt import anon_map
-from .report import SPLITS, _llm, ci, paired
+from .report import NAMES, SPLITS, _geo, _llm, ci, paired
 from .report_v2 import seed_matrix
 
 DECISIVE = ["test_sensor-000000", "test_sensor-000041", "test_sensor-000045", "test_sensor-000051", "test_sensor-000058"]
@@ -23,6 +24,30 @@ DECISIVE = ["test_sensor-000000", "test_sensor-000041", "test_sensor-000045", "t
 
 def fmt(t):
     return f"{t[0]:+.3f} [{t[1]:+.3f}, {t[2]:+.3f}]"
+
+
+def num(x, sign=False):
+    s = f"{x:+.3f}" if sign else f"{x:.3f}"
+    return f"${s}$" if sign or x < 0 else s
+
+
+def diff_tex(t):
+    return f"{num(t[0], True)} [{num(t[1])}, {num(t[2])}]"
+
+
+def q38_table(results):
+    """Rows of Table S11: validity, mean QR with CI, mean answer length and three paired differences per split."""
+    lines = []
+    for sp in SPLITS:
+        b, geo, sft = _llm(results, "q38_27b", "base", sp), _geo(results, sp), _llm(results, "v2_q7b", "sft", sp)
+        gids, Q, _ = seed_matrix(results, "v2_q7b", sp)
+        grpo = dict(zip(gids, Q.mean(1)))
+        ids = sorted(b)
+        q = np.array([b[i]["qr"] for i in ids]); lo, hi = ci(q)
+        lines.append(f"{NAMES[sp]} & {100 * np.mean([b[i]['valid'] for i in ids]):.0f} & {q.mean():.3f} [{lo:.3f}, {hi:.3f}] & "
+                     f"{np.mean([b[i]['n_tokens'] for i in ids]):.0f} & {diff_tex(paired(q, [geo[i] for i in ids]))} & "
+                     f"{diff_tex(paired(q, [sft[i]['qr'] for i in ids]))} & {diff_tex(paired(q, [grpo[i] for i in ids]))} \\\\")
+    return lines
 
 
 def array_use(data, d, anon):
@@ -39,9 +64,12 @@ def array_use(data, d, anon):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--results", default="results/v2"); p.add_argument("--latency", default="results/latency")
-    p.add_argument("--data", default="data/gym2")
+    p.add_argument("--data", default="data/gym2"); p.add_argument("--out", default="out/tables/v2")
     a = p.parse_args()
     R = a.results
+    os.makedirs(a.out, exist_ok=True)
+    with open(os.path.join(a.out, "q38.tex"), "w") as f:
+        f.write("\n".join(q38_table(R)) + "\n")
     print("== Qwen3.8-27B zero-shot: NF4 (training backend) vs NVFP4 (vLLM)")
     for sp in SPLITS:
         b, v = _llm(R, "q38_27b", "basenf4", sp), _llm(R, "q38_27b", "base", sp)
