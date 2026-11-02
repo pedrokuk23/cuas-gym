@@ -41,6 +41,7 @@ figures); training needs the requirements below.
 | Learned surrogate + greedy (Table 3, Table 5, Tables S6--S7) | `python3 -m cuas_rlvr.surrogate --mode properties --seed 0` (seeds 0-2; also `--mode names`), outputs `results/v2/surrogate/surrogate_<mode>_s<seed>.csv`; tables and results by threat: `python3 -m cuas_rlvr.surrogate_report --results results/v2 --data data/gym2 --out out/tables/v2` (needs scikit-learn) |
 | Table S11 (27B zero-shot, NVFP4/vLLM) | `report_extra` writes `q38.tex` (identical to `paper_artifacts/tables/v2/q38.tex`) |
 | Table S13 (27B zero-shot on two serving backends) | printed by `report_extra` |
+| Radar detection curve, sensitivity (supplementary, Section S1) | `python3 -m cuas_rlvr.radar_sensitivity compute --split <split> --matrices ../radar_exact` (each test split; needs the Copernicus tile and scipy), then `python3 -m cuas_rlvr.radar_sensitivity compare --matrices ../radar_exact --out results/v2/radar_sensitivity.json`; released result: `results/v2/radar_sensitivity.json` |
 | Paired differences and bootstrap intervals quoted in the text | printed by the `report_v2` commands (`mean_vs_geo`, `mean_vs_geo_complete`, `anon_vs_*`) |
 | Preliminary environment (supplementary tables) | `python3 -m cuas_rlvr.report --data data/gym --results results` |
 
@@ -118,7 +119,7 @@ export CUAS_API_KEY=...        # never store the key in a file
 
 | Path | Content |
 |---|---|
-| `cuas_rlvr/` | MLX training (`sft_mlx`, `grpo_mlx`, `mlx_common`, `select_sft`, `mlx_sft_data`), evaluation (`eval_mlx`), probes (`probe_swap`, `probe_types`), gradient diagnosis (`diag_grad`), tables and figures (`report`, `report_v2`, `report_extra`, `cost_table`, `surrogate_report`, `truncation_report`, `figure_curves`, `figure_instance`, `figure_map_rationale`), supervised checkpoint selection (`pick_sft`), learned surrogate baseline (`surrogate`) |
+| `cuas_rlvr/` | MLX training (`sft_mlx`, `grpo_mlx`, `mlx_common`, `select_sft`, `mlx_sft_data`), evaluation (`eval_mlx`), probes (`probe_swap`, `probe_types`), gradient diagnosis (`diag_grad`), tables and figures (`report`, `report_v2`, `report_extra`, `cost_table`, `radar_sensitivity`, `surrogate_report`, `truncation_report`, `figure_curves`, `figure_instance`, `figure_map_rationale`), supervised checkpoint selection (`pick_sft`), learned surrogate baseline (`surrogate`) |
 | `gpu/` | PyTorch/TRL pipeline: `sft_trl`, `grpo_trl` (verifier as GRPO reward), `eval_hf`, `merge_lora`, `run_gpu.sh`, `scale27.sh` |
 | `scripts/` | MLX pipelines (`run_mac.sh` version 1, `run_mac_v2.sh` version 2), probes, API evaluation |
 | `data/` | SFT data built from the reference solutions (`sft_train.jsonl` v1, `sft_train_v2.jsonl`, `sft_train_v2anon.jsonl`) |
